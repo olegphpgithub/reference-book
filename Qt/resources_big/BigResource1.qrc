@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/BigResource1">
+        <file>res/_s9216_0.bin</file>
+        <file>res/_s9216_1.bin</file>
+    </qresource>
+</RCC>
