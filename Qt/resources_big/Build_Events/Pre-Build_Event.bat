@@ -4,7 +4,7 @@
 
 IF NOT '%ERRORLEVEL%'=='0' GOTO failure
 
-"%~2\cl.exe" /c "%~dp0..\qrc_BigResource1.cpp" /MP /GS /analyze- /W1 /Zc:wchar_t /Zi /Gm- /Od /WX- /Zc:forScope /Gd /Oy- /MTd /FC /EHsc /nologo /Fo:"%~dp0..\qrc_BigResource1.tmp.obj"
+"%~2\cl.exe" /c "%~dp0..\qrc_BigResource1.cpp" /MP /GS /analyze- /W1 /Zc:wchar_t /Zi /Gm- /Od /WX- /Zc:forScope /Gd /Oy- /FC /EHsc /nologo /Fo:"%~dp0..\qrc_BigResource1.tmp.obj"
 
 IF NOT '%ERRORLEVEL%'=='0' GOTO failure
 
