@@ -193,6 +193,45 @@ OPENSSL_LIBS_RELEASE="-llibeay32 -lssleay32" ^
 -L "d:\qt\openssl\openssl-1.0.1u-vs2015-static-x32\lib"</pre>
                 </td>
             </tr>
+            <tr>
+                <td class="nowrap">2022-08-22</td>
+                <td class="nowrap">5.6.3.0.a</td>
+                <td class="nowrap center">2012</td>
+                <td class="nowrap">1.0.1t</td>
+                <td class="nowrap">
+<pre>perl Configure VC-WIN32 no-asm --prefix=d:\qt\openssl\openssl-1.0.1t-vs2012-static-x32 ^
+no-shared ^
+enable-ssl3 ^
+enable-ssl3-method
+
+configure ^
+-static ^
+-debug-and-release ^
+-prefix "d:\qt\5.6.3.0.a" ^
+-platform win32-msvc2012 ^
+-opensource ^
+-confirm-license ^
+-make libs ^
+-nomake tools ^
+-nomake examples ^
+-nomake tests ^
+-no-opengl ^
+-no-cups ^
+-no-mtdev ^
+-no-sql-db2 ^
+-no-sql-ibase ^
+-no-sql-mysql ^
+-no-qml-debug ^
+-qt-pcre ^
+-qt-freetype ^
+-openssl-linked ^
+OPENSSL_LIBS="-lWs2_32 -lGdi32 -lAdvapi32 -lCrypt32 -lUser32 -llibeay32 -lssleay32" ^
+OPENSSL_LIBS_DEBUG="-llibeay32 -lssleay32" ^
+OPENSSL_LIBS_RELEASE="-llibeay32 -lssleay32" ^
+-I "d:\qt\openssl\openssl-1.0.1t-vs2012-static-x32\include" ^
+-L "d:\qt\openssl\openssl-1.0.1t-vs2012-static-x32\lib"</pre>
+                </td>
+            </tr>
         </table>
     </body>
 </html>
