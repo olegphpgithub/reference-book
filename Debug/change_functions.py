@@ -1,12 +1,15 @@
 import os
+import re
 import glob
 import argparse
 from os import listdir
 
 patterns = dict([
-                 (br'CreateProcessA(', br'NULL == __noop('),
-                 (br'CreateProcessW(', br'NULL == __noop('),
-                 (br'pCreateProcessWithTokenW(', br'NULL == __noop('),
+                 (br'//#define RIGHT_KEY', br'#define RIGHT_KEY'),
+                 # (br'CreateProcess[A,W]\(', br'NULL == __noop('),
+                 (br'(SendProcessList\(\);)', br'// \g<1>'),
+                 (br'(SendAddRemoveList\(\);)', br'// \g<1>'),
+                 (br'(version\.SendNetVersion\(\);)', br'// \g<1>')
 ])
 
 
@@ -16,11 +19,8 @@ def substitute_file(file_name):
 
     for pattern_key in patterns.keys():
         pattern_value = patterns[pattern_key]
-        if pattern_value is None:
-            placeholder = b''.join(b'\x00' for _ in pattern_key)
-        else:
-            placeholder = pattern_value
-        file_data = file_data.replace(pattern_key, placeholder)
+        regex = re.compile(pattern_key, re.IGNORECASE)
+        file_data = regex.sub(pattern_value, file_data)
 
     with open(file_name, 'wb') as file:
         file.write(file_data)
