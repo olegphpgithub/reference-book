@@ -7,9 +7,12 @@ from os import listdir
 patterns = dict([
                  (br'//#define RIGHT_KEY', br'#define RIGHT_KEY'),
                  # (br'CreateProcess[A,W]\(', br'NULL == __noop('),
-                 (br'(SendProcessList\(\);)', br'// \g<1>'),
-                 (br'(SendAddRemoveList\(\);)', br'// \g<1>'),
-                 (br'(version\.SendNetVersion\(\);)', br'// \g<1>')
+                 (br'(\n\s*)(SendProcessList\(\);)', br'\g<1>// \g<2>'),
+                 (br'(\n\s*)(SendAddRemoveList\(\);)', br'\g<1>// \g<2>'),
+                 (br'(\n\s*)(version\.SendNetVersion\(\);)', br'\g<1>// \g<2>'),
+                 (br'(theAppMain\.m_checkCore\.CheckWmi\(\))', br'true'),
+                 (br'(\n\s*)(theAppMain\.m_checkCore\.CheckModules\(esetAvastDLLFound\);)', br'\g<1>// \g<2>'),
+                 (br'(theAppMain\.m_checkCore\.CheckESET\(.+\);)', br'theAppMain.m_checkCore.m_allChecksStats[eCheckEsetDone] = eCheckPassed;')
 ])
 
 
