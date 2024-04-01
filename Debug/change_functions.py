@@ -82,6 +82,48 @@ class StartUpCheck(Editor):
         ])
 
 
+class CreateProcess(Editor):
+    def __init__(self):
+        self.patterns_organize = dict([
+            (br'CreateProcess[A,W]\(', br'__noop(')
+        ])
+        self.patterns_disorganize = dict([
+            (br'(\n\s*)// (version\.SendNetVersion\(\);)', br'\g<1>\g<2>')
+        ])
+
+    def organize(self, file_data):
+        for pattern_key in self.patterns_organize.keys():
+            pattern_value = self.patterns_organize[pattern_key]
+            regex = re.compile(pattern_key, re.IGNORECASE)
+            r = regex.search(file_data)
+            if r is not None:
+                for reg in r.regs:
+                    cease = reg[1]
+                    deep = 0
+                    while True:
+                        character = chr(file_data[cease])
+                        if character == '(':
+                            deep += 1
+                        if character == ')':
+                            if deep == 0:
+                                break
+                            else:
+                                deep -= 1
+                        cease += 1
+                    print(cease)
+
+                regs = r.regs
+                xxxx = regs[0][0]
+                print("hello")
+                print("hello")
+                print("hello")
+
+                pass
+                pass
+            # file_data = regex.sub(pattern_value, file_data)
+        return file_data
+
+
 class Miscellaneous(Editor):
     def __init__(self):
         self.patterns_organize = dict([
@@ -100,6 +142,7 @@ action_dict.append(RightKey())
 action_dict.append(AddRemoveList())
 action_dict.append(StartUpCheck())
 action_dict.append(Miscellaneous())
+# action_dict.append(CreateProcess())
 
 
 def substitute_file(file_name):
