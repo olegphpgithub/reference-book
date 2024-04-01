@@ -1,20 +1,20 @@
 import os
 import re
+import enum
 import glob
 import argparse
 from os import listdir
 from collections import OrderedDict
 
 patterns = dict([
-                 (br'//#define RIGHT_KEY', br'#define RIGHT_KEY'),
                  # (br'CreateProcess[A,W]\(', br'NULL == __noop('),
-                 (br'(\n\s*)(SendProcessList\(\);)', br'\g<1>// \g<2>'),
-                 (br'(\n\s*)(SendAddRemoveList\(\);)', br'\g<1>// \g<2>'),
-                 (br'(\n\s*)(version\.SendNetVersion\(\);)', br'\g<1>// \g<2>'),
-                 (br'(theAppMain\.m_checkCore\.CheckWmi\(\))', br'true'),
-                 (br'(\n\s*)(theAppMain\.m_checkCore\.CheckModules\(esetAvastDLLFound\);)', br'\g<1>// \g<2>'),
-                 (br'(theAppMain\.m_checkCore\.CheckESET\(.+\);)', br'theAppMain.m_checkCore.m_allChecksStats[eCheckEsetDone] = eCheckPassed;')
+
 ])
+
+
+class Intent(enum.Enum):
+    organize = 1
+    disorganize = 2
 
 
 class Editor:
@@ -37,6 +37,17 @@ class Editor:
         return file_data
 
 
+class RightKey(Editor):
+    def __init__(self):
+        self.patterns_organize = dict([
+            (br'//#define RIGHT_KEY', br'#define RIGHT_KEY'),
+        ])
+
+        self.patterns_disorganize = dict([
+            (br'#define RIGHT_KEY', br'//#define RIGHT_KEY'),
+        ])
+
+
 class AddRemoveList(Editor):
     def __init__(self):
         self.patterns_organize = dict([
@@ -50,21 +61,56 @@ class AddRemoveList(Editor):
         ])
 
 
-action_dict = OrderedDict()
-action_dict['market_2940_down'] = AddRemoveList()
+class StartUpCheck(Editor):
+    def __init__(self):
+        self.patterns_organize = dict([
+            (br'theAppMain\.m_checkCore\.CheckWmi\(\)',
+             br'(strcmp("ae36f891-62d6-45b7-88a1-982dcc29e560", "ae36f891-62d6-45b7-88a1-982dcc29e560") == 0)'),
+            (br'(\n\s*)(theAppMain\.m_checkCore\.CheckModules\(esetAvastDLLFound\);)',
+             br'\g<1>// \g<2>'),
+            (br'(theAppMain\.m_checkCore\.CheckESET\(.+\);)',
+             br'theAppMain.m_checkCore.m_allChecksStats[eCheckEsetDone] = eCheckPassed; // e89114f6-002e-4887-aca6-499b8371349e')
+        ])
+
+        self.patterns_disorganize = dict([
+            (br'\(strcmp\("ae36f891-62d6-45b7-88a1-982dcc29e560", "ae36f891-62d6-45b7-88a1-982dcc29e560"\) == 0\)',
+             br'theAppMain.m_checkCore.CheckWmi()'),
+            (br'(\n\s*)//\s(theAppMain\.m_checkCore\.CheckModules\(esetAvastDLLFound\);)',
+             br'\g<1>\g<2>'),
+            (br'theAppMain.m_checkCore.m_allChecksStats[eCheckEsetDone] = eCheckPassed; // e89114f6-002e-4887-aca6-499b8371349e',
+             br'(theAppMain.m_checkCore.CheckESET\(.+\);)')
+        ])
+
+
+class Miscellaneous(Editor):
+    def __init__(self):
+        self.patterns_organize = dict([
+            (br'(\n\s*)(version\.SendNetVersion\(\);)', br'\g<1>// \g<2>')
+        ])
+        self.patterns_disorganize = dict([
+            (br'(\n\s*)// (version\.SendNetVersion\(\);)', br'\g<1>\g<2>')
+        ])
+
+
+intent = Intent.organize
+# intent = Intent.disorganize
+
+action_dict = list()
+action_dict.append(RightKey())
+action_dict.append(AddRemoveList())
+action_dict.append(StartUpCheck())
+action_dict.append(Miscellaneous())
 
 
 def substitute_file(file_name):
     with open(file_name, 'rb') as file:
         file_data = file.read()
 
-    # for pattern_key in patterns.keys():
-    #     pattern_value = patterns[pattern_key]
-    #     regex = re.compile(pattern_key, re.IGNORECASE)
-    #     file_data = regex.sub(pattern_value, file_data)
-
-    for action in action_dict.values():
-        file_data = action.organize(file_data)
+    for action in action_dict:
+        if intent == Intent.organize:
+            file_data = action.organize(file_data)
+        elif intent == Intent.disorganize:
+            file_data = action.disorganize(file_data)
 
     with open(file_name, 'wb') as file:
         file.write(file_data)
