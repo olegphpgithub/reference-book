@@ -3,6 +3,7 @@ import re
 import glob
 import argparse
 from os import listdir
+from collections import OrderedDict
 
 patterns = dict([
                  (br'//#define RIGHT_KEY', br'#define RIGHT_KEY'),
@@ -16,14 +17,54 @@ patterns = dict([
 ])
 
 
+class Editor:
+    def __init__(self):
+        self.patterns_organize = dict()
+        self.patterns_disorganize = dict()
+
+    def organize(self, file_data):
+        for pattern_key in self.patterns_organize.keys():
+            pattern_value = self.patterns_organize[pattern_key]
+            regex = re.compile(pattern_key, re.IGNORECASE)
+            file_data = regex.sub(pattern_value, file_data)
+        return file_data
+
+    def disorganize(self, file_data):
+        for pattern_key in self.patterns_disorganize.keys():
+            pattern_value = self.patterns_disorganize[pattern_key]
+            regex = re.compile(pattern_key, re.IGNORECASE)
+            file_data = regex.sub(pattern_value, file_data)
+        return file_data
+
+
+class AddRemoveList(Editor):
+    def __init__(self):
+        self.patterns_organize = dict([
+            (br'(\n\s*)(SendProcessList\(\);)', br'\g<1>// \g<2>'),
+            (br'(\n\s*)(SendAddRemoveList\(\);)', br'\g<1>// \g<2>'),
+        ])
+
+        self.patterns_disorganize = dict([
+            (br'(\n\s*)//\s(SendProcessList\(\);)', br'\g<1>\g<2>'),
+            (br'(\n\s*)//\s(SendAddRemoveList\(\);)', br'\g<1>\g<2>'),
+        ])
+
+
+action_dict = OrderedDict()
+action_dict['market_2940_down'] = AddRemoveList()
+
+
 def substitute_file(file_name):
     with open(file_name, 'rb') as file:
         file_data = file.read()
 
-    for pattern_key in patterns.keys():
-        pattern_value = patterns[pattern_key]
-        regex = re.compile(pattern_key, re.IGNORECASE)
-        file_data = regex.sub(pattern_value, file_data)
+    # for pattern_key in patterns.keys():
+    #     pattern_value = patterns[pattern_key]
+    #     regex = re.compile(pattern_key, re.IGNORECASE)
+    #     file_data = regex.sub(pattern_value, file_data)
+
+    for action in action_dict.values():
+        file_data = action.organize(file_data)
 
     with open(file_name, 'wb') as file:
         file.write(file_data)
