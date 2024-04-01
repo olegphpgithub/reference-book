@@ -6,11 +6,6 @@ import argparse
 from os import listdir
 from collections import OrderedDict
 
-patterns = dict([
-                 # (br'CreateProcess[A,W]\(', br'NULL == __noop('),
-
-])
-
 
 class Intent(enum.Enum):
     organize = 1
@@ -119,7 +114,7 @@ class CreateProcess(Editor):
                                 deep -= 1
                         cease += 1
 
-                    file_data = file_data[0:reg[0]] + br"(0x2cf0368a == 0x2cf0368a) /*" + file_data[reg[0]:cease + 1] + br"*/" + file_data[cease + 1:-1]
+                    file_data = file_data[0:reg[0]] + br"(0x2cf0368a == 0x2cf0368a) /*" + file_data[reg[0]:cease + 1] + br"*/" + file_data[cease + 1:]
 
         return file_data
 
