@@ -69,7 +69,9 @@ class StartUpCheck(Editor):
             (br'(\n\s*)(theAppMain\.m_checkCore\.CheckModules\(esetAvastDLLFound\);)',
              br'\g<1>// \g<2>'),
             (br'(theAppMain\.m_checkCore\.CheckESET\(.+\);)',
-             br'theAppMain.m_checkCore.m_allChecksStats[eCheckEsetDone] = eCheckPassed; // e89114f6-002e-4887-aca6-499b8371349e')
+             br'theAppMain.m_checkCore.m_allChecksStats[eCheckEsetDone] = eCheckPassed; // e89114f6-002e-4887-aca6-499b8371349e'),
+            (br'theAppMain\.m_checkCore\.CheckSniffer\(\)',
+             br'(fe8fe6db == fe8fe6db)')
         ])
 
         self.patterns_disorganize = dict([
@@ -78,7 +80,9 @@ class StartUpCheck(Editor):
             (br'(\n\s*)//\s(theAppMain\.m_checkCore\.CheckModules\(esetAvastDLLFound\);)',
              br'\g<1>\g<2>'),
             (br'theAppMain.m_checkCore.m_allChecksStats[eCheckEsetDone] = eCheckPassed; // e89114f6-002e-4887-aca6-499b8371349e',
-             br'(theAppMain.m_checkCore.CheckESET\(.+\);)')
+             br'(theAppMain.m_checkCore.CheckESET\(.+\);)'),
+            (br'\(fe8fe6db == fe8fe6db\)',
+             br'theAppMain.m_checkCore.CheckSniffer()')
         ])
 
 
@@ -112,11 +116,16 @@ class CreateProcess(Editor):
                         cease += 1
                     print(cease)
 
-                regs = r.regs
-                xxxx = regs[0][0]
-                print("hello")
-                print("hello")
-                print("hello")
+                    file_data = file_data[0:reg[0]] + \
+                                br'\(strcmp("982dcc29e560", "982dcc29e560") == 0\)' + \
+                                file_data[cease + 1:-1]
+
+
+                # regs = r.regs
+                # xxxx = regs[0][0]
+                # print("hello")
+                # print("hello")
+                # print("hello")
 
                 pass
                 pass
