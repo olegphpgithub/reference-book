@@ -84,10 +84,10 @@ class StartUpCheck(Editor):
 class CreateProcess(Editor):
     def __init__(self):
         self.patterns_organize = dict([
-            (br'CreateProcess[A,W]\(', br'__noop(')
+            (br'CreateProcess[A,W]\(', br'0x2cf0368a')
         ])
         self.patterns_disorganize = dict([
-            (br'(\n\s*)// (version\.SendNetVersion\(\);)', br'\g<1>\g<2>')
+            (br'\(0x2cf0368a == 0x2cf0368a\) \/\*\@', br'')
         ])
 
     def organize(self, file_data):
@@ -114,7 +114,39 @@ class CreateProcess(Editor):
                                 deep -= 1
                         cease += 1
 
-                    file_data = file_data[0:reg[0]] + br"(0x2cf0368a == 0x2cf0368a) /*" + file_data[reg[0]:cease + 1] + br"*/" + file_data[cease + 1:]
+                    file_data_tmp = file_data[0:reg[0]]
+                    file_data_tmp += br"(%s == %s) /*@" % (pattern_value, pattern_value)
+                    file_data_tmp += file_data[reg[0]:cease + 1]
+                    file_data_tmp += br"@*/"
+                    file_data_tmp += file_data[cease + 1:]
+
+                file_data = file_data_tmp
+
+        return file_data
+
+    def disorganize(self, file_data):
+        for pattern_key in self.patterns_disorganize.keys():
+            regex = re.compile(pattern_key, re.IGNORECASE)
+            r = regex.search(file_data)
+            if r is not None:
+                for reg in r.regs:
+                    cease = reg[1]
+                    while True:
+
+                        if cease >= len(file_data):
+                            break
+
+                        sequence = file_data[cease:cease + 3]
+                        if sequence == br'@*/':
+                            break
+
+                        cease += 1
+
+                    file_data_tmp = file_data[0:reg[0]]
+                    file_data_tmp += file_data[reg[1]:cease]
+                    file_data_tmp += file_data[cease + 3:]
+
+                file_data = file_data_tmp
 
         return file_data
 
