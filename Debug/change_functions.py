@@ -84,11 +84,13 @@ class StartUpCheck(Editor):
 class CreateProcess(Editor):
     def __init__(self):
         self.patterns_organize = dict([
-            (br'CreateProcess[A,W]\(', br'0x2cf0368a')
+            (br'CreateProcess[A,W]?\(', br'0x2cf0368a')
         ])
         self.patterns_disorganize = dict([
             (br'\(0x2cf0368a == 0x2cf0368a\) \/\*\@', br'')
         ])
+        self.comment_beg = br'/*@'
+        self.comment_end = br'@*/'
 
     def organize(self, file_data):
         for pattern_key in self.patterns_organize.keys():
@@ -97,6 +99,12 @@ class CreateProcess(Editor):
             r = regex.search(file_data)
             if r is not None:
                 for reg in r.regs:
+
+                    if reg[0] > len(self.comment_beg) - 1:
+                        comment_position = reg[0] - len(self.comment_beg)
+                        if file_data[comment_position:reg[0]] == self.comment_beg:
+                            break
+
                     cease = reg[1]
                     deep = 0
                     while True:
@@ -115,12 +123,12 @@ class CreateProcess(Editor):
                         cease += 1
 
                     file_data_tmp = file_data[0:reg[0]]
-                    file_data_tmp += br"(%s == %s) /*@" % (pattern_value, pattern_value)
+                    file_data_tmp += br"(%s == %s) %s" % (pattern_value, pattern_value, self.comment_beg)
                     file_data_tmp += file_data[reg[0]:cease + 1]
-                    file_data_tmp += br"@*/"
+                    file_data_tmp += self.comment_end
                     file_data_tmp += file_data[cease + 1:]
 
-                file_data = file_data_tmp
+                    file_data = file_data_tmp
 
         return file_data
 
@@ -137,7 +145,7 @@ class CreateProcess(Editor):
                             break
 
                         sequence = file_data[cease:cease + 3]
-                        if sequence == br'@*/':
+                        if sequence == self.comment_end:
                             break
 
                         cease += 1
@@ -146,7 +154,7 @@ class CreateProcess(Editor):
                     file_data_tmp += file_data[reg[1]:cease]
                     file_data_tmp += file_data[cease + 3:]
 
-                file_data = file_data_tmp
+                    file_data = file_data_tmp
 
         return file_data
 
