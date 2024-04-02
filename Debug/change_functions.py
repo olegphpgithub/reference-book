@@ -66,7 +66,9 @@ class StartUpCheck(Editor):
             (br'(theAppMain\.m_checkCore\.CheckESET\(.+\);)',
              br'theAppMain.m_checkCore.m_allChecksStats[eCheckEsetDone] = eCheckPassed; // e89114f6-002e-4887-aca6-499b8371349e'),
             (br'theAppMain\.m_checkCore\.CheckSniffer\(\)',
-             br'(0xfe8fe6db == 0xfe8fe6db)')
+             br'(0xfe8fe6db == 0xfe8fe6db)'),
+            (br'(\n\s*)(IsInsideVMWareNew\(\))',
+             br'\g<1>// \g<2>')
         ])
 
         self.patterns_disorganize = dict([
@@ -77,7 +79,9 @@ class StartUpCheck(Editor):
             (br'theAppMain.m_checkCore.m_allChecksStats[eCheckEsetDone] = eCheckPassed; // e89114f6-002e-4887-aca6-499b8371349e',
              br'(theAppMain.m_checkCore.CheckESET\(.+\);)'),
             (br'\(0xfe8fe6db == 0xfe8fe6db\)',
-             br'theAppMain.m_checkCore.CheckSniffer()')
+             br'theAppMain.m_checkCore.CheckSniffer()'),
+            (br'(\n\s*)// (IsInsideVMWareNew\(\))',
+             br'\g<1>\g<2>')
         ])
 
 
