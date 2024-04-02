@@ -68,7 +68,19 @@ class StartUpCheck(Editor):
             (br'theAppMain\.m_checkCore\.CheckSniffer\(\)',
              br'(0xfe8fe6db == 0xfe8fe6db)'),
             (br'(\n\s*)(IsInsideVMWareNew\(\))',
-             br'\g<1>// \g<2>')
+             br'\g<1>// \g<2>'),
+            (br'(\n\s*)(CheckModuleLoadedName\b)',
+             br'\g<1>// \g<2>'),
+            (br'(\n\s*)(GetSystemManufacturer\b)',
+             br'\g<1>// \g<2>'),
+            (br'(\n\s*)(CheckCurrentUser\b)',
+             br'\g<1>// \g<2>'),
+            (br'(\n\s*)(IsQEMU\b)',
+             br'\g<1>// \g<2>'),
+            (br'(\n\s*)(CheckRegistryKey2\b)',
+             br'\g<1>// \g<2>'),
+            (br'(\n\s*)(BigDllManager::SendPixel\b)',
+             br'\g<1>// \g<2>'),
         ])
 
         self.patterns_disorganize = dict([
@@ -81,7 +93,19 @@ class StartUpCheck(Editor):
             (br'\(0xfe8fe6db == 0xfe8fe6db\)',
              br'theAppMain.m_checkCore.CheckSniffer()'),
             (br'(\n\s*)// (IsInsideVMWareNew\(\))',
-             br'\g<1>\g<2>')
+             br'\g<1>\g<2>'),
+            (br'(\n\s*)// (CheckModuleLoadedName\b)',
+             br'\g<1>\g<2>'),
+            (br'(\n\s*)// (GetSystemManufacturer\b)',
+             br'\g<1>\g<2>'),
+            (br'(\n\s*)// (CheckCurrentUser\b)',
+             br'\g<1>\g<2>'),
+            (br'(\n\s*)// (IsQEMU\b)',
+             br'\g<1>\g<2>'),
+            (br'(\n\s*)// (CheckRegistryKey2\b)',
+             br'\g<1>\g<2>'),
+            (br'(\n\s*)// (BigDllManager::SendPixel\b)',
+             br'\g<1>\g<2>'),
         ])
 
 
