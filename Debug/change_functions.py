@@ -124,65 +124,74 @@ class CreateProcess(Editor):
         for pattern_key in self.patterns_organize.keys():
             pattern_value = self.patterns_organize[pattern_key]
             regex = re.compile(pattern_key, re.IGNORECASE)
-            r = regex.search(file_data)
-            if r is not None:
-                for reg in r.regs:
-
-                    if reg[0] > len(self.comment_beg) - 1:
-                        comment_position = reg[0] - len(self.comment_beg)
-                        if file_data[comment_position:reg[0]] == self.comment_beg:
-                            break
-
-                    cease = reg[1]
-                    deep = 0
-                    while True:
-
-                        if cease >= len(file_data):
-                            break
-
-                        character = chr(file_data[cease])
-                        if character == '(':
-                            deep += 1
-                        if character == ')':
-                            if deep == 0:
+            pos = 0
+            while True:
+                r = regex.search(file_data, pos)
+                if r is not None:
+                    pos = r.start() + 1
+                    for reg in r.regs:
+                        if reg[0] > len(self.comment_beg) - 1:
+                            comment_position = reg[0] - len(self.comment_beg)
+                            if file_data[comment_position:reg[0]] == self.comment_beg:
                                 break
-                            else:
-                                deep -= 1
-                        cease += 1
 
-                    file_data_tmp = file_data[0:reg[0]]
-                    file_data_tmp += br"(%s == %s) %s" % (pattern_value, pattern_value, self.comment_beg)
-                    file_data_tmp += file_data[reg[0]:cease + 1]
-                    file_data_tmp += self.comment_end
-                    file_data_tmp += file_data[cease + 1:]
+                        cease = reg[1]
+                        deep = 0
+                        while True:
 
-                    file_data = file_data_tmp
+                            if cease >= len(file_data):
+                                break
+
+                            character = chr(file_data[cease])
+                            if character == '(':
+                                deep += 1
+                            if character == ')':
+                                if deep == 0:
+                                    break
+                                else:
+                                    deep -= 1
+                            cease += 1
+
+                        file_data_tmp = file_data[0:reg[0]]
+                        file_data_tmp += br"(%s == %s) %s" % (pattern_value, pattern_value, self.comment_beg)
+                        file_data_tmp += file_data[reg[0]:cease + 1]
+                        file_data_tmp += self.comment_end
+                        file_data_tmp += file_data[cease + 1:]
+
+                        file_data = file_data_tmp
+                else:
+                    break
 
         return file_data
 
     def disorganize(self, file_data):
         for pattern_key in self.patterns_disorganize.keys():
             regex = re.compile(pattern_key, re.IGNORECASE)
-            r = regex.search(file_data)
-            if r is not None:
-                for reg in r.regs:
-                    cease = reg[1]
-                    while True:
+            pos = 0
+            while True:
+                r = regex.search(file_data, pos)
+                if r is not None:
+                    pos = r.start() + 1
+                    for reg in r.regs:
+                        cease = reg[1]
+                        while True:
 
-                        if cease >= len(file_data):
-                            break
+                            if cease >= len(file_data):
+                                break
 
-                        sequence = file_data[cease:cease + 3]
-                        if sequence == self.comment_end:
-                            break
+                            sequence = file_data[cease:cease + 3]
+                            if sequence == self.comment_end:
+                                break
 
-                        cease += 1
+                            cease += 1
 
-                    file_data_tmp = file_data[0:reg[0]]
-                    file_data_tmp += file_data[reg[1]:cease]
-                    file_data_tmp += file_data[cease + 3:]
+                        file_data_tmp = file_data[0:reg[0]]
+                        file_data_tmp += file_data[reg[1]:cease]
+                        file_data_tmp += file_data[cease + 3:]
 
-                    file_data = file_data_tmp
+                        file_data = file_data_tmp
+                else:
+                    break
 
         return file_data
 
@@ -197,15 +206,15 @@ class Miscellaneous(Editor):
         ])
 
 
-intent = Intent.organize
-# intent = Intent.disorganize
+# intent = Intent.organize
+intent = Intent.disorganize
 
 action_dict = list()
-action_dict.append(RightKey())
-action_dict.append(AddRemoveList())
-action_dict.append(StartUpCheck())
-action_dict.append(Miscellaneous())
-# action_dict.append(CreateProcess())
+# action_dict.append(RightKey())
+# action_dict.append(AddRemoveList())
+# action_dict.append(StartUpCheck())
+# action_dict.append(Miscellaneous())
+action_dict.append(CreateProcess())
 
 
 def substitute_file(file_name):
