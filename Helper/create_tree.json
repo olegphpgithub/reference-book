@@ -1,0 +1,12 @@
+{
+    "paths": [
+        {
+            "scb.other.reg": "scb.lava/other/apr.25.reg.scb.other.lava.b2055.vs2017_v141.installerbaseinc.com.Mack",
+            "scb.other.uac": "scb.lava/other/apr.25.uac.scb.other.lava.b2055.vs2017_v141.installerbaseinc.com.Mack",
+            "scb.avast.reg": "scb.lava/avast/apr.25.reg.scb.avast.lava.b2055.vs2017_v141.webinstallerbase.com.NoSign",
+            "scb.avast.uac": "scb.lava/avast/apr.25.uac.scb.avast.lava.b2055.vs2017_v141.webinstallerbase.com.NoSign",
+            "scb.defender.reg": "scb.lava/defender/apr.25.reg.scb.defender.lava.b2055.vs2017_v141.installerplan.com.MultiSign",
+            "scb.defender.uac": "scb.lava/defender/apr.25.uac.scb.defender.lava.b2055.vs2017_v141.installerplan.com.MultiSign"
+        }
+    ]
+}
