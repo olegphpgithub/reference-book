@@ -1,16 +1,25 @@
 {
     "paths": [
         {
-            "scb.avast.reg": "scb.CXR4/scb.main/avast/may.20.reg.scb.main.avast.CXR4.sec.b2057.vs2019_v142.softworlddesign.com.NoSign",
-            "scb.defender.reg": "scb.CXR4/scb.main/defender/may.20.reg.scb.main.defender.CXR4.sec.b2057.vs2019_v140.softwarecdnlive.com.MultiSign",
-            "scb.other.reg": "scb.CXR4/scb.main/other/may.20.reg.scb.main.other.CXR4.sec.b2057.vs2017_v141.mobilesoftwarecdnlive.com.MultiSign",
+            "scb.avast.reg": "scb.CXR4/scb.main/avast/may.24.reg.scb.main.avast.CXR4.sec.b2057.vs2019_v142.softworlddesign.com.NoSign",
+            "scb.avast.uac": "scb.CXR4/scb.main/avast/may.24.uac.scb.main.avast.CXR4.sec.b2057.vs2019_v142.softworlddesign.com.NoSign",
+            "scb.defender.reg": "scb.CXR4/scb.main/defender/may.24.reg.scb.main.defender.CXR4.sec.b2057.vs2019_v140.softwarecdnlive.com.MultiSign",
+            "scb.defender.uac": "scb.CXR4/scb.main/defender/may.24.uac.scb.main.defender.CXR4.sec.b2057.vs2019_v140.softwarecdnlive.com.MultiSign",
+            "scb.other.reg": "scb.CXR4/scb.main/other/may.24.reg.scb.main.other.CXR4.sec.b2057.vs2017_v141.mobilesoftwarecdnlive.com.MultiSign",
+            "scb.other.uac": "scb.CXR4/scb.main/other/may.24.uac.scb.main.other.CXR4.sec.b2057.vs2017_v141.mobilesoftwarecdnlive.com.MultiSign",
 
-            "scb.avast.reg.64": "scb.CXR4/scb.cover/avast/x64_Cover/may.20.reg.scb.main.avast.CXR4.sec.x64Cover.b2057.vs2019_v142.softworlddesign.com.NoSign",
-            "scb.avast.reg.86": "scb.CXR4/scb.cover/avast/x86_Cover/may.20.reg.scb.main.avast.CXR4.sec.x86Cover.b2057.vs2019_v142.softworlddesign.com.NoSign",
-            "scb.defender.reg.64": "scb.CXR4/scb.cover/defender/x64_Cover/may.20.reg.scb.main.defender.CXR4.sec.x64Cover.b2057.vs2019_v140.softwarecdnlive.com.MultiSign",
-            "scb.defender.reg.86": "scb.CXR4/scb.cover/defender/x86_Cover/may.20.reg.scb.main.defender.CXR4.sec.x86Cover.b2057.vs2019_v140.softwarecdnlive.com.MultiSign",
-            "scb.other.reg.64": "scb.CXR4/scb.cover/other/x64_Cover/may.20.reg.scb.main.other.CXR4.sec.x64Cover.b2057.vs2017_v141.mobilesoftwarecdnlive.com.MultiSign",
-            "scb.other.reg.86": "scb.CXR4/scb.cover/other/x86_Cover/may.20.reg.scb.main.other.CXR4.sec.x86Cover.b2057.vs2017_v141.mobilesoftwarecdnlive.com.MultiSign"
+            "scb.avast.reg.64": "scb.CXR4/scb.cover/avast/x64_Cover/may.24.reg.scb.main.avast.CXR4.sec.x64Cover.b2057.vs2019_v142.softworlddesign.com.NoSign",
+            "scb.avast.uac.64": "scb.CXR4/scb.cover/avast/x64_Cover/may.24.uac.scb.main.avast.CXR4.sec.x64Cover.b2057.vs2019_v142.softworlddesign.com.NoSign",
+            "scb.avast.reg.86": "scb.CXR4/scb.cover/avast/x86_Cover/may.24.reg.scb.main.avast.CXR4.sec.x86Cover.b2057.vs2019_v142.softworlddesign.com.NoSign",
+            "scb.avast.uac.86": "scb.CXR4/scb.cover/avast/x86_Cover/may.24.uac.scb.main.avast.CXR4.sec.x86Cover.b2057.vs2019_v142.softworlddesign.com.NoSign",
+            "scb.defender.reg.64": "scb.CXR4/scb.cover/defender/x64_Cover/may.24.reg.scb.main.defender.CXR4.sec.x64Cover.b2057.vs2019_v140.softwarecdnlive.com.MultiSign",
+            "scb.defender.uac.64": "scb.CXR4/scb.cover/defender/x64_Cover/may.24.uac.scb.main.defender.CXR4.sec.x64Cover.b2057.vs2019_v140.softwarecdnlive.com.MultiSign",
+            "scb.defender.reg.86": "scb.CXR4/scb.cover/defender/x86_Cover/may.24.reg.scb.main.defender.CXR4.sec.x86Cover.b2057.vs2019_v140.softwarecdnlive.com.MultiSign",
+            "scb.defender.uac.86": "scb.CXR4/scb.cover/defender/x86_Cover/may.24.uac.scb.main.defender.CXR4.sec.x86Cover.b2057.vs2019_v140.softwarecdnlive.com.MultiSign",
+            "scb.other.reg.64": "scb.CXR4/scb.cover/other/x64_Cover/may.24.reg.scb.main.other.CXR4.sec.x64Cover.b2057.vs2017_v141.mobilesoftwarecdnlive.com.MultiSign",
+            "scb.other.uac.64": "scb.CXR4/scb.cover/other/x64_Cover/may.24.uac.scb.main.other.CXR4.sec.x64Cover.b2057.vs2017_v141.mobilesoftwarecdnlive.com.MultiSign",
+            "scb.other.reg.86": "scb.CXR4/scb.cover/other/x86_Cover/may.24.reg.scb.main.other.CXR4.sec.x86Cover.b2057.vs2017_v141.mobilesoftwarecdnlive.com.MultiSign"
+            "scb.other.uac.86": "scb.CXR4/scb.cover/other/x86_Cover/may.24.uac.scb.main.other.CXR4.sec.x86Cover.b2057.vs2017_v141.mobilesoftwarecdnlive.com.MultiSign"
         }
     ]
 }
