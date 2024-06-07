@@ -1,25 +1,12 @@
 {
     "paths": [
         {
-            "scb.avast.reg": "scb.CXR4/scb.main/avast/may.24.reg.scb.main.avast.CXR4.sec.b2057.vs2019_v142.softworlddesign.com.NoSign",
-            "scb.avast.uac": "scb.CXR4/scb.main/avast/may.24.uac.scb.main.avast.CXR4.sec.b2057.vs2019_v142.softworlddesign.com.NoSign",
-            "scb.defender.reg": "scb.CXR4/scb.main/defender/may.24.reg.scb.main.defender.CXR4.sec.b2057.vs2019_v140.softwarecdnlive.com.MultiSign",
-            "scb.defender.uac": "scb.CXR4/scb.main/defender/may.24.uac.scb.main.defender.CXR4.sec.b2057.vs2019_v140.softwarecdnlive.com.MultiSign",
-            "scb.other.reg": "scb.CXR4/scb.main/other/may.24.reg.scb.main.other.CXR4.sec.b2057.vs2017_v141.mobilesoftwarecdnlive.com.MultiSign",
-            "scb.other.uac": "scb.CXR4/scb.main/other/may.24.uac.scb.main.other.CXR4.sec.b2057.vs2017_v141.mobilesoftwarecdnlive.com.MultiSign",
-
-            "scb.avast.reg.64": "scb.CXR4/scb.cover/x64_Cover/avast/may.24.reg.scb.main.avast.CXR4.sec.x64Cover.b2057.vs2019_v142.softworlddesign.com.NoSign",
-            "scb.avast.uac.64": "scb.CXR4/scb.cover/x64_Cover/avast/may.24.uac.scb.main.avast.CXR4.sec.x64Cover.b2057.vs2019_v142.softworlddesign.com.NoSign",
-            "scb.avast.reg.86": "scb.CXR4/scb.cover/x86_Cover/avast/may.24.reg.scb.main.avast.CXR4.sec.x86Cover.b2057.vs2019_v142.softworlddesign.com.NoSign",
-            "scb.avast.uac.86": "scb.CXR4/scb.cover/x86_Cover/avast/may.24.uac.scb.main.avast.CXR4.sec.x86Cover.b2057.vs2019_v142.softworlddesign.com.NoSign",
-            "scb.defender.reg.64": "scb.CXR4/scb.cover/x64_Cover/defender/may.24.reg.scb.main.defender.CXR4.sec.x64Cover.b2057.vs2019_v140.softwarecdnlive.com.MultiSign",
-            "scb.defender.uac.64": "scb.CXR4/scb.cover/x64_Cover/defender/may.24.uac.scb.main.defender.CXR4.sec.x64Cover.b2057.vs2019_v140.softwarecdnlive.com.MultiSign",
-            "scb.defender.reg.86": "scb.CXR4/scb.cover/x86_Cover/defender/may.24.reg.scb.main.defender.CXR4.sec.x86Cover.b2057.vs2019_v140.softwarecdnlive.com.MultiSign",
-            "scb.defender.uac.86": "scb.CXR4/scb.cover/x86_Cover/defender/may.24.uac.scb.main.defender.CXR4.sec.x86Cover.b2057.vs2019_v140.softwarecdnlive.com.MultiSign",
-            "scb.other.reg.64": "scb.CXR4/scb.cover/x64_Cover/other/may.24.reg.scb.main.other.CXR4.sec.x64Cover.b2057.vs2017_v141.mobilesoftwarecdnlive.com.MultiSign",
-            "scb.other.uac.64": "scb.CXR4/scb.cover/x64_Cover/other/may.24.uac.scb.main.other.CXR4.sec.x64Cover.b2057.vs2017_v141.mobilesoftwarecdnlive.com.MultiSign",
-            "scb.other.reg.86": "scb.CXR4/scb.cover/x86_Cover/other/may.24.reg.scb.main.other.CXR4.sec.x86Cover.b2057.vs2017_v141.mobilesoftwarecdnlive.com.MultiSign",
-            "scb.other.uac.86": "scb.CXR4/scb.cover/x86_Cover/other/may.24.uac.scb.main.other.CXR4.sec.x86Cover.b2057.vs2017_v141.mobilesoftwarecdnlive.com.MultiSign"
+            "scb.avast.reg": "scb.main/avast/jun.07.reg.scb.main.avast.sec.b2057.vs2015_v140_xp.allappinstaller.com.NoSign",
+            "scb.avast.uac": "scb.main/avast/jun.07.uac.scb.main.avast.sec.b2057.vs2015_v140_xp.allappinstaller.com.NoSign",
+            "scb.defender.reg": "scb.main/defender/jun.07.reg.scb.main.defender.sec.b2057.vs2015_v140_xp.setupmysoftware.com.MultiSign",
+            "scb.defender.uac": "scb.main/defender/jun.07.uac.scb.main.defender.sec.b2057.vs2015_v140_xp.setupmysoftware.com.MultiSign",
+            "scb.other.reg": "scb.main/other/jun.07.reg.scb.main.other.sec.b2057.vs2017_v141.websetupmysoft.com.MultiSign",
+            "scb.other.uac": "scb.main/other/jun.07.uac.scb.main.other.sec.b2057.vs2017_v141.websetupmysoft.com.MultiSign"
         }
     ]
 }
