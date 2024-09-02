@@ -199,22 +199,26 @@ class CreateProcess(Editor):
 class Miscellaneous(Editor):
     def __init__(self):
         self.patterns_organize = dict([
-            (br'(\n\s*)(version\.SendNetVersion\(\);)', br'\g<1>// \g<2>')
+            (br'(\n\s*)(version\.SendNetVersion\(\);)', br'\g<1>// \g<2>'),
+            (br'(rem)\s+(python "%~dp0\.\.\\\.\.\\\.\.\\Tools\\CXR4\\cxr_fake.py" -i "%~dp0\.\.\\CXR\\common_define_strings.cxr")', br'\g<2>'),
+            (br'(python "%~dp0\.\.\\\.\.\\\.\.\\Tools\\CXR4\\cxr.py"  -i "%~dp0\.\.\\CXR\\common_define_strings.cxr")', br'rem \g<1>')
         ])
         self.patterns_disorganize = dict([
-            (br'(\n\s*)// (version\.SendNetVersion\(\);)', br'\g<1>\g<2>')
+            (br'(\n\s*)// (version\.SendNetVersion\(\);)', br'\g<1>\g<2>'),
+            (br'(python "%~dp0\.\.\\\.\.\\\.\.\\Tools\\CXR4\\cxr_fake.py" -i "%~dp0\.\.\\CXR\\common_define_strings.cxr")', br'rem \g<1>'),
+            (br'(rem)\s+(python "%~dp0\.\.\\\.\.\\\.\.\\Tools\\CXR4\\cxr.py" -i "%~dp0\.\.\\CXR\\common_define_strings.cxr")', br'\g<2>')
         ])
 
 
-# intent = Intent.organize
-intent = Intent.disorganize
+intent = Intent.organize
+# intent = Intent.disorganize
 
 action_dict = list()
-# action_dict.append(RightKey())
-# action_dict.append(AddRemoveList())
+action_dict.append(RightKey())
+action_dict.append(AddRemoveList())
 # action_dict.append(StartUpCheck())
-# action_dict.append(Miscellaneous())
-action_dict.append(CreateProcess())
+action_dict.append(Miscellaneous())
+# action_dict.append(CreateProcess())
 
 
 def substitute_file(file_name):
@@ -253,6 +257,6 @@ if __name__ == '__main__':
         print("Source directory \"%s\" does not exist" % args.source_directory)
         exit(1)
 
-    extensions = [r'*.cpp', r'*.h']
+    extensions = [r'*.cpp', r'*.h', r'*.bat']
 
     substitute_recursively(args.source_directory, extensions)
