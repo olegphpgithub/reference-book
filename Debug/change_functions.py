@@ -201,7 +201,7 @@ class Miscellaneous(Editor):
         self.patterns_organize = dict([
             (br'(\n\s*)(version\.SendNetVersion\(\);)', br'\g<1>// \g<2>'),
             (br'(rem)\s+(python "%~dp0\.\.\\\.\.\\\.\.\\Tools\\CXR4\\cxr_fake.py" -i "%~dp0\.\.\\CXR\\common_define_strings.cxr")', br'\g<2>'),
-            (br'(python "%~dp0\.\.\\\.\.\\\.\.\\Tools\\CXR4\\cxr.py"  -i "%~dp0\.\.\\CXR\\common_define_strings.cxr")', br'rem \g<1>')
+            (br'(python "%~dp0\.\.\\\.\.\\\.\.\\Tools\\CXR4\\cxr.py" -i "%~dp0\.\.\\CXR\\common_define_strings.cxr")', br'rem \g<1>')
         ])
         self.patterns_disorganize = dict([
             (br'(\n\s*)// (version\.SendNetVersion\(\);)', br'\g<1>\g<2>'),
