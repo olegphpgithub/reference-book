@@ -27,7 +27,7 @@ class Editor:
     def disorganize(self, file_data):
         for pattern_key in self.patterns_disorganize.keys():
             pattern_value = self.patterns_disorganize[pattern_key]
-            regex = re.compile(pattern_key, re.IGNORECASE)
+            regex = re.compile(pattern_key, re.IGNORECASE | re.MULTILINE)
             file_data = regex.sub(pattern_value, file_data)
         return file_data
 
@@ -39,7 +39,7 @@ class RightKey(Editor):
         ])
 
         self.patterns_disorganize = dict([
-            (br'#define RIGHT_KEY', br'//#define RIGHT_KEY'),
+            (br'^#define RIGHT_KEY', br'//#define RIGHT_KEY'),
         ])
 
 
