@@ -253,10 +253,12 @@ if __name__ == '__main__':
     parser.add_argument('--source-directory', required=True)
     args = parser.parse_args()
 
-    if not os.path.isdir(args.source_directory):
-        print("Source directory \"%s\" does not exist" % args.source_directory)
-        exit(1)
-
     extensions = [r'*.cpp', r'*.h', r'*.bat']
 
-    substitute_recursively(args.source_directory, extensions)
+    for src_dir in args.source_directory.split(r';'):
+
+        if not os.path.isdir(src_dir):
+            print("Source directory \"%s\" does not exist" % src_dir)
+            exit(1)
+
+        substitute_recursively(src_dir, extensions)

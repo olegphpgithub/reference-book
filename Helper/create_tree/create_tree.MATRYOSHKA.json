@@ -1,12 +1,12 @@
 {
     "paths": [
         {
-            "scb.avast.reg": "scb.main/avast/sep.04.reg.scb.main.avast.matryoshka.b2057.vs2017_v141.mobileprogramsetup.com",
-            "scb.avast.uac": "scb.main/avast/sep.04.uac.scb.main.avast.matryoshka.b2057.vs2017_v141.mobileprogramsetup.com",
-            "scb.defender.reg": "scb.main/defender/sep.04.reg.scb.main.defender.matryoshka.b2057.vs2017_v141.mobileprogramsetup.com",
-            "scb.defender.uac": "scb.main/defender/sep.04.uac.scb.main.defender.matryoshka.b2057.vs2017_v141.mobileprogramsetup.com",
-            "scb.other.reg": "scb.main/other/sep.04.reg.scb.main.other.matryoshka.b2057.vs2017_v141.mobileprogramsetup.com",
-            "scb.other.uac": "scb.main/other/sep.04.uac.scb.main.other.matryoshka.b2057.vs2017_v141.mobileprogramsetup.com"
+            "scb.avast.reg": "scb.matryoshka/avast/feb.21.reg.scb.main.avast.matryoshka.solutionsinstaller.com",
+            "scb.avast.uac": "scb.matryoshka/avast/feb.21.uac.scb.main.avast.matryoshka.solutionsinstaller.com",
+            "scb.defender.reg": "scb.matryoshka/defender/feb.21.reg.scb.main.defender.matryoshka.solutionsinstaller.com",
+            "scb.defender.uac": "scb.matryoshka/defender/feb.21.uac.scb.main.defender.matryoshka.solutionsinstaller.com",
+            "scb.other.reg": "scb.matryoshka/other/feb.21.reg.scb.main.other.matryoshka.solutionsinstaller.com",
+            "scb.other.uac": "scb.matryoshka/other/feb.21.uac.scb.main.other.matryoshka.solutionsinstaller.com"
         }
     ]
 }
