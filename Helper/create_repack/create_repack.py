@@ -59,7 +59,7 @@ def create_repack(src_dir, dst_dir, cpy_mth, file_qnt):
                 dst_path += r'_' + f'{counter:03}' + r'_' + src_unit.param + r'.' + src_unit.ext
                 copy_map[counter] = CloneFile(src_path, dst_path)
                 counter = counter + 1
-                if counter >= file_qnt:
+                if counter >= file_qnt + 1:
                     break
     elif cpy_mth == r'together':
         counter = 1
