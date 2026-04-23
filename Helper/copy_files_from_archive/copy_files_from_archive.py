@@ -1,14 +1,17 @@
 import subprocess
 import re
 import os
+import sys
 from pathlib import Path
 import zipfile
 import hashlib
+import traceback
 
 
 base_dir = Path(os.path.dirname(__file__))
 out_dir = base_dir / r'output'
-os.mkdir(out_dir)
+if not out_dir.exists():
+    os.mkdir(out_dir)
 
 
 def md5_file(_path):
@@ -62,7 +65,6 @@ for archive in archives:
                 for wanted_file in wanted_files:
 
                     if z_file_path.name == wanted_file.file_name:
-                        print("Found:", z_file_path.name)
 
                         out = subprocess.check_output([
                             "7z.exe",
@@ -77,10 +79,13 @@ for archive in archives:
                         obtained_file_path = out_dir / name
 
                         md5sum = md5_file(obtained_file_path)
-                        print(md5sum)
+
                         if md5sum != wanted_file.md5_sum:
                             os.remove(obtained_file_path)
                             if obtained_file_path.parent.is_dir() and not any(obtained_file_path.parent.iterdir()):
                                 os.rmdir(obtained_file_path.parent)
+                        else:
+                            print("Found: " + md5sum + " " + z_file_path.name)
     except Exception:
-        print("Exception: file: %s", archive)
+        print("Error processing file: \"%s\"" % archive, file=sys.stderr)
+        traceback.print_exc()
