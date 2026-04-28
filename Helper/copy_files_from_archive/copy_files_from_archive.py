@@ -6,6 +6,7 @@ from pathlib import Path
 import zipfile
 import hashlib
 import traceback
+import shutil
 
 
 base_dir = Path(os.path.dirname(__file__))
@@ -22,6 +23,27 @@ def md5_file(_path):
             hash_md5.update(chunk)
 
     return hash_md5.hexdigest()
+
+
+def is_wanted_file(path):
+    for wanted_file in wanted_files:
+        if wanted_file.file_name == path.name:
+            return True
+    return False
+
+
+def validate_wanted_file(path):
+    md5sum = md5_file(path)
+    for wanted_file in wanted_files:
+        if md5sum == wanted_file.md5_sum:
+            return True
+    return False
+
+
+def dismiss_wanted_file(path):
+    os.remove(path.absolute())
+    if path.parent.is_dir() and not any(path.parent.iterdir()):
+        os.rmdir(path.parent)
 
 
 def build_wanted_list():
@@ -57,15 +79,23 @@ for path in root_dir.rglob("*.zip"):
 
 for archive in archives:
     try:
-        with zipfile.ZipFile(archive) as z:
-            z.setpassword(password)
-
-            for name in z.namelist():
-                z_file_path = Path(name)
-                for wanted_file in wanted_files:
-
-                    if z_file_path.name == wanted_file.file_name:
-
+        archive_path = Path(archive)
+        if is_wanted_file(archive_path):
+            if archive_path.parent.is_dir():
+                destination_folder = out_dir / archive_path.parent.name
+                destination_folder.mkdir(parents=True, exist_ok=True)
+            else:
+                destination_folder = out_dir
+            shutil.copy(archive, destination_folder.absolute())
+            destination_path = destination_folder / archive_path.name
+            if not validate_wanted_file(destination_path):
+                dismiss_wanted_file(destination_path)
+        else:
+            with zipfile.ZipFile(archive) as z:
+                z.setpassword(password)
+                for name in z.namelist():
+                    z_file_path = Path(name)
+                    if is_wanted_file(z_file_path):
                         out = subprocess.check_output([
                             "7z.exe",
                             "x",
@@ -78,14 +108,9 @@ for archive in archives:
 
                         obtained_file_path = out_dir / name
 
-                        md5sum = md5_file(obtained_file_path)
+                        if not validate_wanted_file(obtained_file_path):
+                            dismiss_wanted_file(obtained_file_path)
 
-                        if md5sum != wanted_file.md5_sum:
-                            os.remove(obtained_file_path)
-                            if obtained_file_path.parent.is_dir() and not any(obtained_file_path.parent.iterdir()):
-                                os.rmdir(obtained_file_path.parent)
-                        else:
-                            print("Found: " + md5sum + " " + z_file_path.name)
     except Exception:
         print("Error processing file: \"%s\"" % archive, file=sys.stderr)
         traceback.print_exc()
