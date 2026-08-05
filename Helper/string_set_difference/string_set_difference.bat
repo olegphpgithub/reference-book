@@ -6,3 +6,5 @@ set FILE2="c:\dir space\test.csv"
 python "%~dp0string_set_difference.py" ^
  %FILE1% ^
  %FILE2%
+
+pause

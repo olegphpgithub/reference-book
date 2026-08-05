@@ -26,9 +26,6 @@ def parse_file(file_path):
 
 if __name__ == '__main__':
 
-    for i, arg in enumerate(sys.argv):
-        print(i, repr(arg))
-
     string_set_1 = parse_file(sys.argv[1])
     string_set_2 = parse_file(sys.argv[2])
 

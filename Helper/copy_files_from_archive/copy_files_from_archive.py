@@ -7,6 +7,7 @@ import zipfile
 import hashlib
 import traceback
 import shutil
+from pprint import pprint
 
 
 base_dir = Path(os.path.dirname(__file__))
@@ -36,6 +37,7 @@ def validate_wanted_file(path):
     md5sum = md5_file(path)
     for wanted_file in wanted_files:
         if md5sum == wanted_file.md5_sum:
+            wanted_file.is_found = True
             return True
     return False
 
@@ -59,10 +61,33 @@ def build_wanted_list():
                 wanted_files.append(WantedFile(field_name, field_md5))
 
 
+def copy_and_validate_wanted_file(wanted_file_path):
+    if wanted_file_path.parent.is_dir():
+        destination_folder = out_dir / wanted_file_path.parent.name
+        destination_folder.mkdir(parents=True, exist_ok=True)
+    else:
+        destination_folder = out_dir
+    shutil.copy(wanted_file_path, destination_folder.absolute())
+    destination_path = destination_folder / wanted_file_path.name
+    if not validate_wanted_file(destination_path):
+        dismiss_wanted_file(destination_path)
+
+
+def display_results():
+    total = True
+    for wanted_file in wanted_files:
+        if not wanted_file.is_found:
+            total = False
+            print("%s %s - was not found" % (wanted_file.md5_sum, wanted_file.file_name))
+    if total:
+        print("All files were found")
+
+
 class WantedFile:
     def __init__(self, file_name, md5_sum):
         self.file_name = file_name
         self.md5_sum = md5_sum
+        self.is_found = False
 
 
 wanted_files = list()
@@ -81,15 +106,7 @@ for archive in archives:
     try:
         archive_path = Path(archive)
         if is_wanted_file(archive_path):
-            if archive_path.parent.is_dir():
-                destination_folder = out_dir / archive_path.parent.name
-                destination_folder.mkdir(parents=True, exist_ok=True)
-            else:
-                destination_folder = out_dir
-            shutil.copy(archive, destination_folder.absolute())
-            destination_path = destination_folder / archive_path.name
-            if not validate_wanted_file(destination_path):
-                dismiss_wanted_file(destination_path)
+            copy_and_validate_wanted_file(archive_path)
         else:
             with zipfile.ZipFile(archive) as z:
                 z.setpassword(password)
@@ -114,3 +131,10 @@ for archive in archives:
     except Exception:
         print("Error processing file: \"%s\"" % archive, file=sys.stderr)
         traceback.print_exc()
+
+for path in root_dir.rglob("*"):
+    if path.is_file() and path.suffix.lower() != ".zip":
+        if is_wanted_file(path):
+            copy_and_validate_wanted_file(path)
+
+display_results()
