@@ -10,11 +10,11 @@ from pprint import pprint
 
 
 def transform_file(input_file_path, output_file_path):
-    with open(input_file_path, "r", encoding="utf-8", newline="") as f:
-        with open(output_file_path, "w", encoding="utf-8", newline="") as o:
+    with open(input_file_path, "r", encoding="utf-8", newline="", errors="surrogateescape") as i:
+        with open(output_file_path, "w", encoding="utf-8", newline="", errors="surrogateescape") as o:
             pos = 0
             while True:
-                chunk = f.read(1024)
+                chunk = i.read(1024)
                 if not chunk:
                     break
                 output = ""
