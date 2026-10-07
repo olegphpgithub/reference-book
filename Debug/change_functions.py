@@ -4,6 +4,7 @@ import enum
 import glob
 import argparse
 from os import listdir
+from pathlib import Path
 from collections import OrderedDict
 
 
@@ -210,6 +211,42 @@ class Miscellaneous(Editor):
         ])
 
 
+class WindowsTargetPlatformVersion(Editor):
+
+    @staticmethod
+    def find_files(folder: str) -> list[str]:
+        root = Path(folder).expanduser().resolve()
+        return [str(p) for p in root.rglob("*.vcxproj") if p.is_file()]
+
+    PATTERN = r"<WindowsTargetPlatformVersion>([0-9\.]+)</WindowsTargetPlatformVersion>"
+    SUBST = R"<WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>"
+
+    @staticmethod
+    def run(folder: str):
+        files = WindowsTargetPlatformVersion.find_files(folder)
+        for file in files:
+            output = None
+            with open(file, "r", encoding="utf-8", newline="", errors="surrogateescape") as i:
+                data = i.read()
+                regex = re.compile(WindowsTargetPlatformVersion.PATTERN, re.IGNORECASE)
+                r = regex.search(data)
+                if r is not None:
+                    version = r.group(1)
+
+                    parts = version.split(".")
+                    parts += [None] * (4 - len(parts))
+                    major, minor, build, revision = parts[:4]
+                    if major == "10":
+                        if build is not None:
+                            build_list = ["20348", "22621"]
+                            if build not in build_list:
+                                output = regex.sub(WindowsTargetPlatformVersion.SUBST, data)
+
+            if output is not None:
+                with open(file, "w", encoding="utf-8", newline="", errors="surrogateescape") as o:
+                    o.write(output)
+
+
 intent = Intent.organize
 # intent = Intent.disorganize
 
@@ -262,3 +299,4 @@ if __name__ == '__main__':
             exit(1)
 
         substitute_recursively(src_dir, extensions)
+        WindowsTargetPlatformVersion.run(src_dir)
