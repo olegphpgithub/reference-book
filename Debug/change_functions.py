@@ -238,7 +238,7 @@ class WindowsTargetPlatformVersion(Editor):
                     major, minor, build, revision = parts[:4]
                     if major == "10":
                         if build is not None:
-                            build_list = ["20348", "22621"]
+                            build_list = ["14393", "19041", "20348", "22000", "22621"]
                             if build not in build_list:
                                 output = regex.sub(WindowsTargetPlatformVersion.SUBST, data)
 
