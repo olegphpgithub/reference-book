@@ -1,0 +1,1205 @@
+https://dash.ice.ocsops.com/dashboards?page=1&page_size=100&order=-created_at
+https://dash.ice.ocsops.com/dashboard/slave---important-wo-89219
+    Slave - EDGE US (2940/A20) 89780
+    Slave - CHROME US (2940/A20) 89780
+    Slave - EDGE NOT US (2940/A20) 89237
+    Slave- CHROME NOT US (2940/A20) 89237
+https://dash.ice.ocsops.com/dashboard/measuresecure-aging
+    MeasureSecure Aging Model
+    WeatherZero Aging Model (copy)
+    MeasureSecure Uninstall
+    Weather Zero Uninstall
+    MeasureSecure Aging Model - ONLY GOOD USERS
+https://dash.ice.ocsops.com/dashboard/50600-seasoning-file-statistics
+    amazon folder conversion
+    amazon folder intervals
+    wrapper conversion
+    wrapper conversion
+    wrapper conversion
+    wrapper conversion
+    amazon links
+https://dash.ice.ocsops.com/dashboard/slave---alert
+    Alert#001 (9912+9913)/2940 DP
+    Alert#002 (9912+9913)/2940 AP
+    Alert#003 (9912+9913)/2940 OP
+    Alert#004 (1584/2940) DP
+    Alert#005 (1584/2940) AP
+    Alert#006 (1584/2940) OP
+    Alert#007 MATRYOSHKA (9912+9913)/2940
+    Alert#008 MATRYOSHKA (1584/2940)
+    Alert#009 Defender detects of EternalCast
+    Alert#010 Defender detects of Altruistic installer
+    Alert#011 Defender detects of JDownloader SetupFile
+    Alert#012 Defender detects of SCB WRAPPERS ZIP
+    Alert#013 Defender detects of RK2 service
+    Alert#014 Defender detects of RK2
+    Alert#015 Defender detects of Altruistic service
+    Alert#016 Defender detects of JDownloader wrapper
+    Alert#017 Defender detects of Our Products
+    Alert#018 Defender detects of OB
+    Alert#019 NAMED detects of SCB DOWNLOADER
+    Alert#020 Defender detects of SCB DOWNLOADER all
+    Alert#021 Defender detects all
+    Alert#022 NAMED detects of SCB WRAPPERS
+    Alert#023 Defender detects of SCB REG DOWNLOADER
+    Alert#024 Defender detects of SCB UAC DOWNLOADER
+    Alert#025 Defender detects of SCB WRAPPERS all
+    Alert#026 HOURLY UAC (9912+9913/2941)
+    Alert#027 HOURLY UAC (12+13/2941)
+    Alert#028 HOURLY UAC (11/2941)
+    Alert#029 HOURLY UAC (2741/2941)
+    Alert#030 HOURLY UAC (2742/2941)
+    Alert#031 HOURLY UAC (2744/2941)
+    Alert#032 HOURLY UAC (Good tickets/2941)
+    Alert#033 HOURLY McAfee (blender) Offer success
+    Alert#034 HOURLY OneBrowser Offer success
+    Alert#035 HOURLY Quick Driver Updater Offer success
+    Alert#036 HOURLY Altruistic Offer success
+    Alert#037 HOURLY WebCampanion Offer success
+    Alert#038 HOURLY RAV Offer success
+    Alert#039 HOURLY Opera Offer success
+    Alert#040 HOURLY Prow Offer success
+    Alert#041 HOURLY RK Offer success
+    Alert#042 HOURLY EternalCast Offer success
+    Alert#043 HOURLY DeskRest Offer success
+    Alert#044 HOURLY Avast (blender) Offer success
+    Alert#045 HOURLY AVG (blender) Offer success
+    Alert#046 HOURLY Opera (blender) Offer success
+    Alert#047 HOURLY CCleaner (blender) Offer success
+    Alert#048 HOURLY AVG Secure Browser (blender) Offer success
+    Alert#049 HOURLY Avast Secure Browser (blender) Offer success
+    Alert#050 HOURLY YandexBrowser (blender) Offer success
+    Alert#051 HOURLY Avast VPN (blender) Offer success
+https://dash.ice.ocsops.com/dashboard/506xx-landings
+    SDK 506XX landings
+    506XX landings (2940+2941/SDK)
+    50600 landings (24 hours)
+    50600 avast by landing (HOURLY)
+    50600 avast by landing (DAILY)
+    50600 2941/SDK by landing (HOURLY)
+    50600 2941/SDK by landing (DAILY)
+https://dash.ice.ocsops.com/dashboard/50600-a3-a11-sdk-us
+    2025-12-17 - 50602 graph a3+a11 / SDK
+    2025-12-17 - 50608 graph a3+a11 / SDK
+    2025-12-17 - 50610 graph a3+a11 / SDK
+    OB good ticket / accept (continuous) VLAD
+https://dash.ice.ocsops.com/dashboard/slave---stat-for-testers-important
+    Slave#001 - EDGE US (2940/A20) 89780, 89219, 89778, 89822
+    Slave#002 - EDGE US (A3/2940) 89780, 89219, 89778, 89822
+    Slave#003 - EDGE US VOLUME (784) 89780, 89219, 89778, 89822
+    Slave#004 - CHROME US VOLUME (784) 89780, 89219, 89778, 89822
+    Slave#005 - CHROME US (2940/A20) 89780, 89219, 89778, 89822
+    Slave#006 - CHROME US (A3/2940) 89780, 89219, 89778, 89822
+    Slave#007 - EDGE NOT US (2940/A20) 89237, 89219, 89778, 89822
+    Slave#008 - EDGE NOT US (A3/2940) 89237, 89219, 89778, 89822
+    Slave#009 - EDGE NOT US VOLUME (784) 89237, 89219, 89778, 89822
+    Slave#010 - CHROME NOT US VOLUME (784) 89237, 89219, 89778, 89822
+    Slave#011 - CHROME NOT US (2940/A20) 89237, 89219, 89778, 89822
+    Slave#012 - CHROME NOT US (A3/2940) 89237, 89219, 89778, 89822
+    Slave#19 - 50602 (2940+2941/SDK)
+    Slave#20 - 50602 (A3+A11/2940+2941)
+    slave - 50602 SDK
+    Slave#21 - 50602 VOLUME (1374+2744)
+    slave - 50608 (2940+2941/SDK)
+    slave - 50608 (A3+A11/2940+2941)
+    slave - 50608 SDK
+    slave - 50608 VOLUME (1374+2744)
+    slave - 50610 (2940+2941/SDK)
+    slave - 50610 (A3+A11/2940+2941)
+    slave - 50610 SDK
+    slave - 50610 VOLUME (1374+2744)
+    slave - 50600 (ALL 506XX) (2940+2941/SDK)
+    slave - 50600 (ALL) (A3+A11/2940+2941)
+    slave - 50600 (ALL) SDK
+    slave - 50600 (ALL) VOLUME (1374+2744)
+    Slave#017 - 89914 (2940/SDK)
+    Slave#018 - 89914 (A3/2940)
+    slave - 89914 SDK
+    Slave#016 - 89914 VOLUME (784)
+    2025-12-17 - 50602 graph a3+a11 / SDK
+    2025-12-17 - 50608 graph a3+a11 / SDK
+    2025-12-17 - 50610 graph a3+a11 / SDK
+https://dash.ice.ocsops.com/dashboard/stat-for-testers-important
+    EDGE US (2940/A20) 89780, 89219, 89778, 89822
+    EDGE US (A3/2940) 89780, 89219, 89778, 89822
+    CHROME US (2940/A20) 89780, 89219, 89778, 89822
+    CHROME US (A3/2940) 89780, 89219, 89778, 89822
+    EDGE NOT US (2940/A20) 89237, 89219, 89778, 89822
+    EDGE NOT US (A3/2940) 89237, 89219, 89778, 89822
+    CHROME NOT US (2940/A20) 89237, 89219, 89778, 89822
+    CHROME NOT US (A3/2940) 89237, 89219, 89778, 89822
+    50600 (2940+2941/SDK)
+    50600 (A3+A11/2940+2941)
+    89914 (2940/SDK)
+    89914 (A3/2940)
+https://dash.ice.ocsops.com/dashboard/stat-for-testers-other-graphs-
+    SCB Live Links (copy)
+    Table2 sl_off_publishers
+    SDK Conversion Specific Campaign (copy)
+    SDK GOOD CALL RATIO SDK Conversion Specific Campaign (copy for Yurii)
+    SDK Conversion Specific Campaign (copy)
+    SDK Response Time Specific Campaign (copy)
+    action/logcomplete SDK Conversion Specific Campaign (copy)
+    logcomplete/log SDK Conversion Specific Campaign (copy)
+    sl_a3_av_by_hour
+    sl_a3_av_by_date
+    sl_current buckets
+    sl_landing_links
+    Landing links searcher
+    SDK Request Hourly (universal)
+    SDK Request Hourly (universal, subid)
+    sl_campaign_volume_(784)_universal
+    sl_campaign_volume_(784)_universal_subid
+    sl_campaign_conversion_ (A3/SDK)_universal
+    sl_campaign_conversion_(A3/SDK)_universal_subid
+    DownloadToAction SDK Conversion Specific Campaign DAILY (copy)
+    DownloadToAction SDK Conversion Specific Campaign HOURLY (copy)
+    sl_campaign_conversion_a3_to_a20_universal
+    sl_campaign_conversion_2940_to_a20_universal
+https://dash.ice.ocsops.com/dashboard/slave-yuriy-master-dashboard
+    slave Daily AV Wrapper Start of Reg by packs except 'US','KR','JP','IN','PK','AE','NP','UZ','TW'
+https://dash.ice.ocsops.com/dashboard/slave-stat-for-testers-main
+    slave A784 Hourly (wo 50600, 50500)
+    slave SDK Request Hourly US (wo 50600, 50500)
+    slave Campaign volume (784) US (wo 50600, 50500)
+    slave Campaign conversion (A3/SDK) US (wo 50600, 50500)
+    slave Campaign conversion (a3/a20) US (wo 50600, 50500)
+    slave Daily Platform Installs (wo 50600, 50500)
+    slave A1581+1583 / A2940 GOOD USERS
+    slave A784 By Date
+    slave MATRYOSHKA.REG hourly (US, wo 50600, 89914)
+    slave MATRYOSHKA.REG daily (US, wo 50600, 89914)
+    slave MATRYOSHKA.REG PACKS hourly (US, wo 50600, 89914)
+    slave MATRYOSHKA.REG PACKS daily (US, wo 50600, 89914)
+    slave SCB.REG hourly (wo 2956, JP, KR, US, 50600)
+    slave SCB.REG daily (wo 2956, JP, KR, US, 50600)
+    slave HOURLY AV (show/2940) MATRYOSHKA (US wo 89914)
+    slave DAILY AV (show/2940) MATRYOSHKA (US wo 89914)
+    slave HOURLY Start of Uac (A11/2941)
+    slave DAILY Start of Uac (A11/2941)
+    slave HOURLY Survival of Downloader
+    slave DAILY Survival of Downloader
+    slave HOURLY Offers success
+    slave DAILY Offers success
+    slave HOURLY av_a3 (igorpixelav)
+    slave DAILY av_a3 (igorpixelav)
+    slave HOURLY av_a11 (UAC) (igorpixelavuac)
+    slave DAILY av_a11 (UAC) (igorpixelavuac)
+    sl_50600_volume (1374+2744)
+    sl_50600_conversion (A3+A11 / SDK)
+    HOURLY AV Wrapper Start of Reg (action/SDK)
+    DAYLY AV Wrapper Start of Reg (action/SDK)
+    SCB Live Links (copy)
+https://dash.ice.ocsops.com/dashboard/master_today
+    master_today Campaigns
+    master_today Campaigns (V2)
+    master_today Campaigns (V2 50600 50602)
+    master_today SCB.REG hourly (wo 2956, JP, KR, US, 50600)
+    master_today SCB.REG daily (wo 2956, JP, KR, US, 50600)
+    master_today MATRYOSHKA.REG hourly (US, wo 50600, 89914)
+    master_today MATRYOSHKA.REG daily (US, wo 50600, 89914)
+    master_today Daily Platform Installs
+    master_today A1581+1583 / A2940 GOOD USERS
+    master_today all_actions
+    master_today HOURLY AV show/2940 by packs (wo 2956, JP, KR, US, 50600)
+    master_today DAILY AV show/2940 by packs (wo 2956, JP, KR, US, 50600)
+    master_today HOURLY SCB.REG BANNED PACKS
+    master_today DAILY SCB.REG BANNED PACKS
+    master_today DAILY av_a3 (igorpixelav)
+    master_today HOURLY av_a3 (igorpixelav)
+    master_today DAILY av_a11 (UAC) (igorpixelavuac)
+    master_today HOURLY av_a11 (UAC) (igorpixelavuac)
+    master_today HOURLY Start of Uac (A11/2941)
+    master_today DAILY Start of Uac (A11/2941)
+    master_today HOURLY Survival of Downloader
+    master_today DAILY Survival of Downloader
+    master_today DefenderLog
+    master_today HOURLY Offers success
+    master_today DAILY Offers success
+https://dash.ice.ocsops.com/dashboard/master_retro
+    master_retro Campaigns
+    master_retro Campaigns (V2)
+    master_retro Campaigns (V2 50600 50602)
+    master_retro SCB.REG hourly (wo 2956, JP, KR, US, 50600)
+    master_retro SCB.REG daily (wo 2956, JP, KR, US, 50600)
+    master_retro MATRYOSHKA.REG hourly (US, wo 50600, 89914)
+    master_retro MATRYOSHKA.REG daily (US, wo 50600, 89914)
+    master_retro Daily Platform Installs
+    master_retro A1581+1583 / A2940 GOOD USERS
+    master_retro MATRYOSHKA.REG daily (US, wo 50600, 89914) by packs
+    master_retro all_actions
+    master_retro HOURLY AV show/2940 by packs (wo 2956, JP, KR, US, 50600)
+    master_retro DAILY AV show/2940 by packs (wo 2956, JP, KR, US, 50600)
+    master_retro HOURLY SCB.REG BANNED PACKS
+    master_retro DAILY SCB.REG BANNED PACKS
+    master_retro DAILY av_a3 (igorpixelav)
+    master_retro HOURLY av_a3 (igorpixelav)
+    master_retro DAILY av_a11 (UAC) (igorpixelavuac)
+    master_retro HOURLY av_a11 (UAC) (igorpixelavuac)
+    master_retro HOURLY Start of Uac (A11/2941)
+    master_retro DAILY Start of Uac (A11/2941)
+    master_retro HOURLY Survival of Downloader
+    master_retro DAILY Survival of Downloader
+    master_retro DefenderLog
+    master_retro HOURLY Offers success
+    master_retro DAILY Offers success
+https://dash.ice.ocsops.com/dashboard/rk-statistics
+    Hourly RK2 Installs
+    Daily RK2 Installs
+    Hourly RK2 conversion
+    Daily RK2 conversion
+    Hourly RK2 Integrity Control Service installs
+    Hourly RK2 Integrity Control Service survival
+    Hourly RK3 Installs
+    Daily RK3 Installs
+    Hourly RK3 conversion
+    Daily RK3 conversion
+    Hourly RK4 Installs
+    Daily RK4 Installs
+    Hourly RK4 conversion
+    Daily RK4 conversion
+https://dash.ice.ocsops.com/dashboard/slave---stat-for-testers
+    slave_volume_50500_Edge (516)
+    slave_conversion_50500_Edge (A3/SDK)
+    slave_SDK_50500_Edge
+    slave_SDK_50500_Chrome
+    slave_volume_50500_Chrome (516)
+    slave_conversion_50500_Chrome (A3/SDK)
+    slave_volume_50602_Edge (1374+2744)
+    slave_SDK_50602_Edge
+    slave_conversion_50602_Edge (A3+A11 / SDK)
+    slave_volume_50602_Chrome (1374+2744)
+    slave_SDK_50602_Chrome
+    slave_volume_50608_Edge (1374+2744)
+    slave_conversion_50602_Chrome (A3+A11 / SDK)
+    slave_SDK_50608_Edge
+    slave_conversion_50608_Edge (A3+A11 / SDK)
+    slave_volume_50608_Chrome (1374+2744)
+    slave_SDK_50608_Chrome
+    slave_volume_50610_Edge (1374+2744)
+    slave_conversion_50608_Chrome (A3+A11 / SDK)
+    slave_SDK_50610_Edge
+    slave_conversion_50610_Edge (A3+A11 / SDK)
+    slave_volume_50610_Chrome (1374+2744)
+    slave_SDK_50610_Chrome
+    slave#107_volume_89219_Edge (784)
+    slave_conversion_50610_Chrome (A3+A11 / SDK)
+    slave_SDK_89219_Edge
+    slave#108_conversion_89219_Edge (A3/SDK)
+    slave_volume_89219_Chrome (784)
+    slave_SDK_89219_Chrome
+    slave_volume_89237_Edge (784)
+    slave_conversion_89219_Chrome (A3/SDK)
+    slave_SDK_89237_Edge
+    slave_conversion_89237_Edge (A3/SDK)
+    slave_volume_89237_Chrome (784)
+    slave_SDK_89237_Chrome
+    slave_volume_89778_Edge (784)
+    slave_conversion_89237_Chrome (A3/SDK)
+    slave_SDK_89778_Edge
+    slave_conversion_89778_Edge (A3/SDK)
+    slave_volume_89778_Chrome (784)
+    slave_SDK_89778_Chrome
+    slave_volume_89780_Edge (784)
+    slave_conversion_89778_Chrome (A3/SDK)
+    slave_SDK_89780_Edge
+    slave_conversion_89780_Edge (A3/SDK)
+    slave_volume_89780_Chrome (784)
+    slave_SDK_89780_Chrome
+    slave_volume_89784_Edge (784)
+    slave_conversion_89780_Chrome (A3/SDK)
+    slave_SDK_89784_Edge
+    slave_conversion_89784_Edge (A3/SDK)
+    slave_volume_89784_Chrome (784)
+    slave_SDK_89784_Chrome
+    slave_volume_89822_Edge (784)
+    slave_conversion_89784_Chrome (A3/SDK)
+    slave_SDK_89822_Edge
+    slave_conversion_89822_Edge (A3/SDK)
+    slave_volume_89822_Chrome (784)
+    slave_SDK_89822_Chrome
+    slave_volume_89842_Edge (784)
+    slave_conversion_89822_Chrome (A3/SDK)
+    slave_SDK_89842_Edge
+    slave_conversion_89842_Edge (A3/SDK)
+    slave_volume_89842_Chrome (784)
+    slave_SDK_89842_Chrome
+    slave_volume_89854_Edge (784)
+    slave_conversion_89842_Chrome (A3/SDK)
+    slave_SDK_89854_Edge
+    slave_conversion_89854_Edge (A3/SDK)
+    slave_volume_89854_Chrome (784)
+    slave_SDK_89854_Chrome
+    slave_volume_89860_Edge (784)
+    slave_conversion_89854_Chrome (A3/SDK)
+    slave_SDK_89860_Edge
+    slave_conversion_89860_Edge (A3/SDK)
+    slave_volume_89860_Chrome (784)
+    slave_SDK_89860_Chrome
+    slave_volume_89866_Edge (784)
+    slave_conversion_89860_Chrome (A3/SDK)
+    slave_SDK_89866_Edge
+    slave_conversion_89866_Edge (A3/SDK)
+    slave_volume_89866_Chrome (784)
+    slave_SDK_89866_Chrome
+    slave_volume_89874_Edge (784)
+    slave_conversion_89866_Chrome (A3/SDK)
+    slave_SDK_89874_Edge
+    slave_conversion_89874_Edge (A3/SDK)
+    slave_volume_89874_Chrome (784)
+    slave_SDK_89874_Chrome
+    slave_volume_89876_Edge (784)
+    slave_conversion_89874_Chrome (A3/SDK)
+    slave_SDK_89876_Edge
+    slave_conversion_89876_Edge (A3/SDK)
+    slave_volume_89876_Chrome (784)
+    slave_SDK_89876_Chrome
+    slave_volume_89882_Edge (784)
+    slave_conversion_89876_Chrome (A3/SDK)
+    slave_SDK_89882_Edge
+    slave_conversion_89882_Edge (A3/SDK)
+    slave_volume_89882_Chrome (784)
+    slave_SDK_89882_Chrome
+    slave_volume_89884_Edge (784)
+    slave_conversion_89882_Chrome (A3/SDK)
+    slave_SDK_89884_Edge
+    slave_conversion_89884_Edge (A3/SDK)
+    slave_volume_89884_Chrome (784)
+    slave_SDK_89884_Chrome
+    slave_volume_89886_Edge (784)
+    slave_conversion_89884_Chrome (A3/SDK)
+    slave_SDK_89886_Edge
+    slave_conversion_89886_Edge (A3/SDK)
+    slave_volume_89886_Chrome (784)
+    slave_SDK_89886_Chrome
+    slave_volume_89888_Edge (784)
+    slave_conversion_89886_Chrome (A3/SDK)
+    slave_SDK_89888_Edge
+    slave_conversion_89888_Edge (A3/SDK)
+    slave_volume_89888_Chrome (784)
+    slave_SDK_89888_Chrome
+    slave_volume_89892_Edge (784)
+    slave_conversion_89888_Chrome (A3/SDK)
+    slave_SDK_89892_Edge
+    slave_conversion_89892_Edge (A3/SDK)
+    slave_volume_89892_Chrome (784)
+    slave_SDK_89892_Chrome
+    slave_volume_89894_Edge (784)
+    slave_conversion_89892_Chrome (A3/SDK)
+    slave_SDK_89894_Edge
+    slave_conversion_89894_Edge (A3/SDK)
+    slave_volume_89894_Chrome (784)
+    slave_SDK_89894_Chrome
+    slave_volume_89898_Edge (784)
+    slave_conversion_89894_Chrome (A3/SDK)
+    slave_SDK_89898_Edge
+    slave_conversion_89898_Edge (A3/SDK)
+    slave_volume_89898_Chrome (784)
+    slave_SDK_89898_Chrome
+    slave_volume_89902_Edge (784)
+    slave_conversion_89898_Chrome (A3/SDK)
+    slave_SDK_89902_Edge
+    slave_conversion_89902_Edge (A3/SDK)
+    slave_volume_89902_Chrome (784)
+    slave_SDK_89902_Chrome
+    slave_volume_89906_Edge (784)
+    slave_conversion_89902_Chrome (A3/SDK)
+    slave_SDK_89906_Edge
+    slave_conversion_89906_Edge (A3/SDK)
+    slave_volume_89906_Chrome (784)
+    slave_SDK_89906_Chrome
+    slave_volume_89912_Edge (784)
+    slave_conversion_89906_Chrome (A3/SDK)
+    slave_SDK_89912_Edge
+    slave_conversion_89912_Edge (A3/SDK)
+    slave_volume_89912_Chrome (784)
+    slave_SDK_89912_Chrome
+    slave_volume_89914_Edge (784)
+    slave_conversion_89912_Chrome (A3/SDK)
+    slave_SDK_89914_Edge
+    slave_conversion_89914_Edge (A3/SDK)
+    slave_volume_89914_Chrome (784)
+    slave_SDK_89914_Chrome
+    slave_conversion_89914_Chrome (A3/SDK)
+https://dash.ice.ocsops.com/dashboard/slave---stat-for-testers-off
+    slave_50602_volume (1374+2744)
+    slave_50602_conversion (A3+A11 / SDK)
+    slave_SDK_50602
+    slave_SDK_50610
+    slave_50610_volume (1374+2744)
+    slave_50610_conversion (A3+A11 / SDK)
+    slave_volume_89219 (784)
+    slave_conversion_89219 (A3/SDK)
+    slave_SDK_89219
+    slave_SDK_89237
+    slave_volume_89237 (784)
+    slave_conversion_89237 (A3/SDK)
+    slave_volume_89780 (784)
+    slave_conversion_89780 (A3/SDK)
+    slave_SDK_89778
+    slave_SDK_89780
+    slave_volume_89778 (784)
+    slave_conversion_89778 (A3/SDK)
+    slave_volume_89784 (784)
+    slave_conversion_89784 (A3/SDK)
+    slave_SDK_89784
+    slave_SDK_89822
+    slave_volume_89822 (784)
+    slave_conversion_89822 (A3/SDK)
+    slave_volume_89842 (784)
+    slave_conversion_89842 (A3/SDK)
+    slave_SDK_89842
+    slave_SDK_89854
+    slave_volume_89854 (784)
+    slave_conversion_89854 (A3/SDK)
+    slave_volume_89860 (784)
+    slave_conversion_89860 (A3/SDK)
+    slave_SDK_89860
+    slave_SDK_89866
+    slave_volume_89866 (784)
+    slave_conversion_89866 (A3/SDK)
+    slave_volume_89874 (784)
+    slave_conversion_89874 (A3/SDK)
+    slave_SDK_89874
+    slave_SDK_89876
+    slave_volume_89876 (784)
+    slave_conversion_89876 (A3/SDK)
+    slave_volume_89882 (784)
+    slave_conversion_89882 (A3/SDK)
+    slave_SDK_89882
+    slave_SDK_89884
+    slave_volume_89884 (784)
+    slave_conversion_89884 (A3/SDK)
+    slave_volume_89886 (784)
+    slave_conversion_89886 (A3/SDK)
+    slave_SDK_89886
+    slave_SDK_89888
+    slave_volume_89888 (784)
+    slave_conversion_89888 (A3/SDK)
+    slave_volume_89892 (784)
+    slave_conversion_89892 (A3/SDK)
+    slave_SDK_89892
+    slave_SDK_89894
+    slave_volume_89894 (784)
+    slave_conversion_89894 (A3/SDK)
+    slave_volume_89898 (784)
+    slave_conversion_89898 (A3/SDK)
+    slave_SDK_89898
+    slave_SDK_89902
+    slave_volume_89902 (784)
+    slave_conversion_89902 (A3/SDK)
+    slave_volume_89906 (784)
+    slave_conversion_89906 (A3/SDK)
+    slave_SDK_89906
+    slave_SDK_89912
+    slave_volume_89912 (784)
+    slave_conversion_89912 (A3/SDK)
+    slave_volume_89914 (784)
+    slave_conversion_89914 (A3/SDK)
+    slave_SDK_89914
+https://dash.ice.ocsops.com/dashboard/master_cache
+    master_query
+https://dash.ice.ocsops.com/dashboard/onebrowser-aging
+    OB Aging Model
+    OB Uninstall
+    OB Aging Model - ONLY GOOD USERS
+https://dash.ice.ocsops.com/dashboard/yuriy-master-dashboard
+    slave SCB.REG hourly (wo 2956, JP, KR, US, 50600)
+    slave SCB.REG daily (wo 2956, JP, KR, US, 50600)
+    slave HOURLY SCB.REG BANNED PACKS
+    slave DAILY SCB.REG BANNED PACKS
+    slave HOURLY AV (show/2940) ALL PACKS (wo 2956, JP, KR, US, 50600)
+    slave DAILY AV (show/2940) ALL PACKS (wo 2956, JP, KR, US, 50600)
+    slave HOURLY AV (show/2940) DEFENDER (wo 2956, JP, KR, US, 50600)
+    slave DAILY AV (show/2940) DEFENDER (wo 2956, JP, KR, US, 50600)
+    slave HOURLY AV (show/2940) OTHER (wo 2956, JP, KR, US, 50600)
+    slave DAILY AV (show/2940) OTHER (wo 2956, JP, KR, US, 50600)
+    slave HOURLY AV (show/2940) AVAST (wo 2956, JP, KR, US, 50600)
+    slave DAILY AV (show/2940) AVAST (wo 2956, JP, KR, US, 50600)
+    slave Daily Platform Installs (wo 50600, 50500)
+    slave Daily Platform Installs (wo 50600, 50500)
+    slave Daily Platform Installs (wo 50600, 50500)
+    slave Daily Platform Installs (wo 50600, 50500)
+    slave sdk_volume
+    slave sdk_volume
+    slave action/action
+    slave action/action
+    slave action/action
+    slave action/action
+    slave campaign_conversion_a3_to_a20_universal
+    slave campaign_conversion_a3_to_a20_universal
+    slave campaign_conversion_a2940_to_a20_universal
+    slave campaign_conversion_a2940_to_a20_universal
+https://dash.ice.ocsops.com/dashboard/eternalcast-aging
+    MeasureSecure Aging Model
+    EternalCast Aging Model
+    WeatherZero Aging Model (copy)
+    MeasureSecure Uninstall
+    EternalCast Uninstall
+    Weather Zero Uninstall
+    MeasureSecure Aging Model - ONLY GOOD USERS
+    EternalCast Aging Model - ONLY GOOD USERS
+https://dash.ice.ocsops.com/dashboard/stat-for-testers-old
+    Table2 sl_not_off_publishers
+    sl_50002_volume (784)
+    sl_50002_conversion (A3/SDK)
+    SDK Request Hourly 50002
+    SDK Request Hourly 50004
+    sl_50004_volume (784)
+    sl_50004_conversion (A3/SDK)
+    sl_89786_volume (784)
+    sl_89786_conversion (A3/SDK)
+    SDK Request Hourly 89786
+    SDK Request Hourly 89792
+    sl_89792_volume (784)
+    sl_89792_conversion (A3/SDK)
+    sl_89794_volume (784)
+    sl_89794_conversion (A3/SDK)
+    SDK Request Hourly 89794
+    SDK Request Hourly 89798
+    sl_89798_volume (784)
+    sl_89798_conversion (A3/SDK)
+    sl_89802_volume (784)
+    sl_89802_conversion (A3/SDK)
+    SDK Request Hourly 89802
+    SDK Request Hourly 89804
+    sl_89804_volume (784)
+    sl_89804_conversion (A3/SDK)
+    sl_89806_volume (784)
+    sl_89806_conversion (A3/SDK)
+    SDK Request Hourly 89806
+    SDK Request Hourly 89810
+    sl_89810_volume (784)
+    sl_89810_conversion (A3/SDK)
+    sl_89812_volume (784)
+    sl_89812_conversion (A3/SDK)
+    SDK Request Hourly 89812
+    SDK Request Hourly 89814
+    sl_89814_volume (784)
+    sl_89814_conversion (A3/SDK)
+    sl_89818_volume (784)
+    sl_89818_conversion (A3/SDK)
+    SDK Request Hourly 89818
+    SDK Request Hourly 89820
+    sl_89820_volume (784)
+    sl_89820_conversion (A3/SDK)
+    sl_89826_volume (784)
+    sl_89826_conversion (A3/SDK)
+    SDK Request Hourly 89826
+    SDK Request Hourly 89828
+    sl_89828_volume (784)
+    sl_89828_conversion (A3/SDK)
+    sl_89846_volume (784)
+    sl_89846_conversion (A3/SDK)
+    SDK Request Hourly 89846
+    SDK Request Hourly 89856
+    sl_89856_volume (784)
+    sl_89856_conversion (A3/SDK)
+    sl_100601_volume (784)
+    sl_100601_conversion (A3/SDK)
+    SDK Request Hourly 100601
+    sl_50005_volume (784)
+    sl_50005_conversion (A3/SDK)
+    SDK Request Hourly 50005
+    sl_50006_volume (784)
+    sl_50006_conversion (A3/SDK)
+    SDK Request Hourly 50006
+    SDK Request Hourly 89848
+    sl_89848_volume (784)
+    sl_89848_conversion (A3/SDK)
+    SDK Request Hourly 89852
+    sl_89852_conversion (A3/SDK)
+    sl_89852_volume (784)
+https://dash.ice.ocsops.com/dashboard/detail-graphs
+    HOURLY AV Wrapper Start of Reg (A1747+581+1583+1240/2940) (without IN, TR, BR, 2956)
+    DAILY AV Wrapper Start of Reg (A1747+581+1583+1240/2940) (without IN, TR, BR, 2956)
+    HOURLY AV Wrapper Start of Uac (A11/2941) (without IN, TR, BR, 2956)
+    DAILY AV Wrapper Start of Uac (A11/2941) (without IN, TR, BR, 2956)
+    HOURLY AV Wrapper Start of Reg (action/2940)
+    DAILY AV Wrapper Start of Reg (action/2940)
+    HOURLY AV Wrapper Start of Reg by matryoshka's pack (US) and lava's pack
+    Daily AV Wrapper Start of Reg by matryoshka's pack (US) and lava's pack
+    HOURLY AV Wrapper Start of Reg by packs (with 1584, 1747)
+    Daily AV Wrapper Start of Reg by packs (with 1584, 1747)
+    HOURLY AV Wrapper Start of Reg (A1747+581+1583+1240/2940) (copy2)
+    DAILY AV Wrapper Start of Reg (A1747+581+1583+1240/2940) (copy2)
+    HOURLY AV Wrapper Start of Reg by packs (with 1584, without IN, TR, BR, 2956)
+    Daily AV Wrapper Start of Reg by packs (with 1584, without IN, TR, BR, 2956)
+    HOURLY AV Wrapper Start of UAC by matryoshka's pack (US, CH) and lava's pack
+    Daily AV Wrapper Start of UAC by matryoshka's pack (US, CH) and lava's pack
+    sl 9912 and 12+13 by packs (last 10 days)
+    sec/seccomplete
+    sl_campaign_conversion_a3_to_a20_universal (US/not US)
+    sl_campaign_conversion_2940_to_a20_universal (US/not US)
+    Last Defender detects of SCB.REG.DOWNLOADER (all)
+    Last Defender detects of SCB.UAC.DOWNLOADER
+    Last Defender detects of RK2
+    Last Defender detects of DLLs
+https://dash.ice.ocsops.com/dashboard/skycast-aging
+    Skycast Aging Model
+    Skycast Aging Model
+    SkyCast Aging Model - ONLY GOOD USERS
+https://dash.ice.ocsops.com/dashboard/log-for-testers
+    NAMED detects of SCB.DOWNLOADER
+    NAMED detects of SCB.WRAPPERS
+    Defender detects (all)
+    Defender detects
+    Defender detects of SCB.DOWNLOADER (all)
+    Defender detects of SCB.DOWNLOADER
+    Defender detects of SCB.REG.DOWNLOADER
+    Defender detects of SCB.REG.DOWNLOADER
+    Defender detects of SCB.UAC.DOWNLOADER
+    Defender detects of SCB.UAC.DOWNLOADER
+    Defender detects of SCB.WRAPPERS (all)
+    Defender detects of SCB.WRAPPERS
+    Defender detects of JDownloader wrapper
+    Defender detects of SCB.WRAPPERS (.ZIP)
+    Defender detects of RK2
+    Defender detects of JDownloader SetupFile
+    Defender detects of RK2 service
+    Defender detects of Altruistic service
+    Defender detects of OB
+    All detects of OneBrowser (table)
+    Defender detects of Our Products
+    Defender detects of Altruistic installer
+    Defender detects of EternalCast
+    NAMED detects of SCB.DOWNLOADER (table)
+    NAMED detects of SCB.WRAPPERS (table)
+    Wrapper Info
+    Copy of (#768) Defender Log - Last 1000 WRAPPER Rows
+    Defender Log - Last 1000 Rows
+    Defender detects of SCB.REG.DOWNLOADER
+    Defender detects of SCB.REG.DOWNLOADER
+    Defender detects of SCB.UAC.DOWNLOADER
+    Defender Log WRAPPER
+https://dash.ice.ocsops.com/dashboard/defender-log
+    Chart2 Defender Log Hourly / Compared to Wrapper Defender+PUA
+    Chart2 NOT PUA - REAL DEFENDER DETECTION! Defender Log Hourly / Compared to Wrapper Defender+PUA
+    Chart2 Defender Log Daily
+    Chart2 Defender Log Hourly
+    Chart2 Defender Log Daily PUA ONLY
+    Chart2 Defender Log Hourly PUA ONLY
+    Chart2 Defender Log Daily SNACKARCIN DOWNLOADER+HELPER ONLY
+    Chart2 PERCENTAGE Defender Log DAILY / Compared to Wrapper Defender+PUA
+    Defender Log - Last 1000 WRAPPER Rows
+    Defender Log - Last 1000 Rows
+https://dash.ice.ocsops.com/dashboard/av-by-packs
+    HOURLY AV Wrapper Start of Reg (A1747+581+1583+1240/2940) (ALL PACKS)
+    DAILY AV Wrapper Start of Reg (A1747+581+1583+1240/2940) (ALL PACKS)
+    HOURLY AV Wrapper Start of Reg (A1747+581+1583+1240/2940) (OTHER pack)
+    DAILY AV Wrapper Start of Reg (A1747+581+1583+1240/2940) (OTHER pack)
+    HOURLY AV Wrapper Start of Reg (A1747+581+1583+1240/2940) (RAV/AVAST pack)
+    DAILY AV Wrapper Start of Reg (A1747+581+1583+1240/2940) (RAV/AVAST pack)
+https://dash.ice.ocsops.com/dashboard/1584_drop_investigate
+    120 Days A1584 to 2940
+    120 Days actions to 2940
+    120 Days a13** actions to a3
+    120 Days a3 to 2940 by packs
+    120 Days McAfee show by packs
+    120 Days McAfee decline to show by packs
+    120 Days McAffee actions to McAfee show
+    120 Days SSO show by packs
+    120 Days lost by packs
+    120 Days a3 to 2940 by browsers
+    120 Days browsers complete to all
+    120 Days A1581 to A3
+    120 Days A3 to 2940
+    120 Days 1371 (sso show) to A3
+    120 Days 1747 to 2940
+    120 Days 1584 to 1582
+    120 Days 1351 (mcafee show) to A3
+    120 Days 1582 to 1581
+    120 Days A1582 to A3
+    120 Days A1583 to A3
+https://dash.ice.ocsops.com/dashboard/investigator
+    investigator_volume
+    investigator_1747+1583+1584_volume
+    investigator_a2940_conversion
+    investigator_a3_conversion
+    investigator_SDK_Request_Hourly
+    investigator_1583_volume
+    investigator_1747_volume
+https://dash.ice.ocsops.com/dashboard/stat-for-testers-main
+    A784 Hourly (copy)
+    SDK Request Hourly US
+    Campaign volume (784) US
+    Campaign conversion (A3/SDK) US
+    Campaign conversion (a3/a20) US
+    Daily Platform Installs (copy)
+    A1581+1583 / A2940 GOOD USERS (copy)
+    A784 By Date (copy)
+    slave MATRYOSHKA.REG hourly (US, wo 50600, 89914)
+    slave MATRYOSHKA.REG daily (US, wo 50600, 89914)
+    HOURLY AV Wrapper Start of Reg All (A1747+581+1583+1240/2940) (exclude 50600, exclude 89914)
+    DAILY AV Wrapper Start of Reg All (A1747+581+1583+1240/2940) (exclude 50600, exclude 89914)
+    HOURLY AV Wrapper Start of Reg All (A1747+581+1583+1240/2940) (copy)
+    DAILY AV Wrapper Start of Reg All (A1747+581+1583+1240/2940) (copy)
+    HOURLY Hard skip reasons of Reg All
+    DAILY Hard skip reasons of Reg All
+    HOURLY AV Wrapper Start of Reg by packs
+    Daily AV Wrapper Start of Reg by packs
+    HOURLY AV Wrapper Start of Uac All (A11/2941) (copy)
+    DAILY AV Wrapper Start of Uac All (A11/2941) (copy)
+    HOURLY AV Wrapper Start of Reg (A1747+581+1583+1240/2940) (copy)
+    DAILY AV Wrapper Start of Reg (A1747+581+1583+1240/2940) (copy)
+    HOURLY AV Wrapper Start of Uac (A11/2941) (copy)
+    DAILY AV Wrapper Start of Uac (A11/2941) (copy)
+    HOURLY AV Wrapper Survival of Downloader A1835/A2142 All (copy)
+    AV Wrapper Survival of Downloader A1835/A2142 All (copy)
+    HOURLY AV Wrapper Survival of UAC Downloader A1839/A2141 All (copy)
+    AV Wrapper Survival of UAC Downloader A1839/A2141 All (copy)
+    HOURLY AV Wrapper Survival of Downloader A1835/A2142 (copy)
+    AV Wrapper Survival of Downloader A1835/A2142 (copy)
+    HOURLY AV Wrapper Survival of UAC Downloader A1839/A2141 (copy)
+    AV Wrapper Survival of UAC Downloader A1839/A2141 (copy)
+    HOURLY AV Wrapper Start of Reg (action/2940)
+    DAILY AV Wrapper Start of Reg (action/2940)
+    sl_a3_av_by_hour
+    sl_a3_av_by_date
+    sl_50600_volume (1374+2744)
+    sl_50600_conversion (A3+A11 / SDK)
+    sl_a3_av_by_hour (UAC)
+    sl_a3_av_by_date (UAC)
+    HOURLY AV Wrapper Start of Reg (action/SDK)
+https://dash.ice.ocsops.com/dashboard/stat-for-testers-off
+    SCB Live Links (copy)
+    sl_50006_volume (784)
+    sl_50006_conversion (A3/SDK)
+    SDK Request Hourly 50006
+    SDK Request Hourly 50500
+    sl_50500_volume (516)
+    sl_50500_conversion (A3/SDK)
+    sl_50600_volume (784)
+    sl_50600_conversion (A3/SDK)
+    SDK Request Hourly 50600
+    SDK Request Hourly 89219
+    sl_89219_volume (784)
+    sl_89219_conversion (A3/SDK)
+    sl_89237_volume (784)
+    sl_89237_conversion (A3/SDK)
+    SDK Request Hourly 89237
+    SDK Request Hourly 89778
+    sl_89778_volume (784)
+    sl_89778_conversion (A3/SDK)
+    sl_89780_volume (784)
+    sl_89780_conversion (A3/SDK)
+    SDK Request Hourly 89780
+    SDK Request Hourly 89784
+    sl_89784_volume (784)
+    sl_89784_conversion (A3/SDK)
+    sl_89822_volume (784)
+    sl_89822_conversion (A3/SDK)
+    SDK Request Hourly 89822
+    SDK Request Hourly 89842
+    sl_89842_volume (784)
+    sl_89842_conversion (A3/SDK)
+    sl_89854_volume (784)
+    SDK Request Hourly 89854
+    sl_89854_conversion (A3/SDK)
+    sl_89860_volume (784)
+    SDK Request Hourly 89860
+    sl_89866_volume (784)
+    sl_89860_conversion (A3/SDK)
+    SDK Request Hourly 89866
+    sl_89866_conversion (A3/SDK)
+    sl_89874_volume (784)
+    SDK Request Hourly 89874
+    sl_89876_volume (784)
+    sl_89874_conversion (A3/SDK)
+    SDK Request Hourly 89876
+    sl_89876_conversion (A3/SDK)
+    sl_89882_volume (784)
+    SDK Request Hourly 89882
+    sl_89884_volume (784)
+    sl_89882_conversion (A3/SDK)
+    SDK Request Hourly 89884
+    sl_89884_conversion (A3/SDK)
+    sl_89886_volume (784)
+    SDK Request Hourly 89886
+    sl_89888_volume (784)
+    sl_89886_conversion (A3/SDK)
+    SDK Request Hourly 89888
+    sl_89888_conversion (A3/SDK)
+    sl_89892_volume (784)
+    SDK Request Hourly 89892
+    sl_89894_volume (784)
+    sl_89892_conversion (A3/SDK)
+    SDK Request Hourly 89894
+    sl_89894_conversion (A3/SDK)
+    sl_89898_volume (784)
+    SDK Request Hourly 89898
+    sl_89902_volume (784)
+    sl_89898_conversion (A3/SDK)
+    SDK Request Hourly 89902
+    sl_89902_conversion (A3/SDK)
+    sl_89906_volume (784)
+    SDK Request Hourly 89906
+    sl_89912_volume (784)
+    sl_89906_conversion (A3/SDK)
+    SDK Request Hourly 89912
+    sl_89912_conversion (A3/SDK)
+    sl_89914_volume (784)
+    SDK Request Hourly 89914
+    sl_89914_conversion (A3/SDK)
+    Table2 sl_off_publishers
+    SDK Conversion Specific Campaign (copy)
+    SDK GOOD CALL RATIO SDK Conversion Specific Campaign (copy for Yurii)
+    SDK Conversion Specific Campaign (copy)
+    SDK Response Time Specific Campaign (copy)
+    action/logcomplete SDK Conversion Specific Campaign (copy)
+    logcomplete/log SDK Conversion Specific Campaign (copy)
+https://dash.ice.ocsops.com/dashboard/stat_for_testers
+    sl_50500_volume_edge (516)
+    sl_50500_conversion_edge (A3/SDK)
+    SDK Request Hourly 50500 Edge
+    SDK Request Hourly 50500 Chrome
+    sl_50500_volume_chrome (516)
+    sl_50500_conversion_chrome (A3/SDK)
+    sl_50600_volume_edge (784)
+    sl_50600_conversion_edge (A3/SDK)
+    SDK Request Hourly 50600 Edge
+    SDK Request Hourly 50600 Chrome
+    sl_50600_volume_chrome (784)
+    sl_50600_conversion_chrome (A3/SDK)
+    sl_89219_volume_edge (784)
+    sl_89219_conversion_edge (A3/SDK)
+    SDK Request Hourly 89219 Edge
+    SDK Request Hourly 89219 Chrome
+    sl_89219_volume_chrome (784)
+    sl_89219_conversion_chrome (A3/SDK)
+    sl_89237_volume_edge (784)
+    sl_89237_conversion_edge (A3/SDK)
+    SDK Request Hourly 89237 Edge
+    SDK Request Hourly 89237 Chrome
+    sl_89237_volume_chrome (784)
+    sl_89237_conversion_chrome (A3/SDK)
+    sl_89778_volume_edge (784)
+    sl_89778_conversion_edge (A3/SDK)
+    SDK Request Hourly 89778 Edge
+    SDK Request Hourly 89778 Chrome
+    sl_89778_volume_chrome (784)
+    sl_89778_conversion_chrome (A3/SDK)
+    sl_89780_volume_edge (784)
+    sl_89780_conversion_edge (A3/SDK)
+    SDK Request Hourly 89780 Edge
+    SDK Request Hourly 89780 Chrome
+    sl_89780_volume_chrome (784)
+    sl_89780_conversion_chrome (A3/SDK)
+    sl_89784_volume_edge (784)
+    sl_89784_conversion_edge (A3/SDK)
+    SDK Request Hourly 89784 Edge
+    SDK Request Hourly 89784 Chrome
+    sl_89784_volume_chrome (784)
+    sl_89784_conversion_chrome (A3/SDK)
+    sl_89822_volume_edge (784)
+    sl_89822_conversion_edge (A3/SDK)
+    SDK Request Hourly 89822 Edge
+    SDK Request Hourly 89822 Chrome
+    sl_89822_volume_chrome (784)
+    sl_89822_conversion_chrome (A3/SDK)
+    sl_89842_volume_edge (784)
+    sl_89842_conversion_edge (A3/SDK)
+    SDK Request Hourly 89842 Edge
+    SDK Request Hourly 89842 Chrome
+    sl_89842_volume_chrome (784)
+    sl_89842_conversion_chrome (A3/SDK)
+    sl_89854_conversion_edge (A3/SDK)
+    sl_89854_volume_edge (784)
+    SDK Request Hourly 89854 Chrome
+    SDK Request Hourly 89854 Edge
+    sl_89854_conversion_chrome (A3/SDK)
+    sl_89854_volume_chrome (784)
+    sl_89860_conversion_chrome (A3/SDK)
+    sl_89860_volume_chrome (784)
+    SDK Request Hourly 89860 Chrome
+    SDK Request Hourly 89860 Edge
+    sl_89860_conversion_edge (A3/SDK)
+    sl_89860_volume_edge (784)
+    sl_89866_conversion_edge (A3/SDK)
+    sl_89866_volume_edge (784)
+    SDK Request Hourly 89866 Chrome
+    SDK Request Hourly 89866 Edge
+    sl_89866_conversion_chrome (A3/SDK)
+    sl_89866_volume_chrome (784)
+    sl_89874_conversion_edge (A3/SDK)
+    sl_89874_volume_edge (784)
+    SDK Request Hourly 89874 Chrome
+    SDK Request Hourly 89874 Edge
+    sl_89874_conversion_chrome (A3/SDK)
+    sl_89874_volume_chrome (784)
+    sl_89876_conversion_edge (A3/SDK)
+    sl_89876_volume_edge (784)
+    SDK Request Hourly 89876 Chrome
+    SDK Request Hourly 89876 Edge
+    sl_89876_conversion_chrome (A3/SDK)
+    sl_89876_volume_chrome (784)
+    sl_89882_conversion_edge (A3/SDK)
+    sl_89882_volume_edge (784)
+    SDK Request Hourly 89882 Chrome
+    SDK Request Hourly 89882 Edge
+    sl_89882_conversion_chrome (A3/SDK)
+    sl_89882_volume_chrome (784)
+    sl_89884_conversion_edge (A3/SDK)
+    sl_89884_volume_edge (784)
+    SDK Request Hourly 89884 Chrome
+    SDK Request Hourly 89884 Edge
+    sl_89884_conversion_chrome (A3/SDK)
+    sl_89884_volume_chrome (784)
+    sl_89886_conversion_edge (A3/SDK)
+    sl_89886_volume_edge (784)
+    SDK Request Hourly 89886 Chrome
+    SDK Request Hourly 89886 Edge
+    sl_89886_conversion_chrome (A3/SDK)
+    sl_89886_volume_chrome (784)
+    sl_89888_conversion_edge (A3/SDK)
+    sl_89888_volume_edge (784)
+    sl_89888_conversion_chrome (A3/SDK)
+    SDK Request Hourly 89888 Edge
+    SDK Request Hourly 89888 Chrome
+    sl_89888_volume_chrome (784)
+    sl_89892_conversion_edge (A3/SDK)
+    sl_89892_volume_edge (784)
+    SDK Request Hourly 89892 Chrome
+    SDK Request Hourly 89892 Edge
+    sl_89892_conversion_chrome (A3/SDK)
+    sl_89892_volume_chrome (784)
+    sl_89894_conversion_edge (A3/SDK)
+    sl_89894_volume_edge (784)
+    SDK Request Hourly 89894 Chrome
+    SDK Request Hourly 89894 Edge
+    sl_89894_conversion_chrome (A3/SDK)
+    sl_89894_volume_chrome (784)
+    sl_89898_conversion_edge (A3/SDK)
+    sl_89898_volume_edge (784)
+    SDK Request Hourly 89898 Chrome
+    SDK Request Hourly 89898 Edge
+    sl_89898_conversion_chrome (A3/SDK)
+    sl_89898_volume_chrome (784)
+    sl_89902_conversion_edge (A3/SDK)
+    sl_89902_volume_edge (784)
+    SDK Request Hourly 89902 Chrome
+    SDK Request Hourly 89902 Edge
+    sl_89902_conversion_chrome (A3/SDK)
+    sl_89902_volume_chrome (784)
+    sl_89906_conversion_edge (A3/SDK)
+    sl_89906_volume_edge (784)
+    SDK Request Hourly 89906 Chrome
+    SDK Request Hourly 89906 Edge
+    sl_89906_conversion_chrome (A3/SDK)
+    sl_89906_volume_chrome (784)
+    sl_89912_conversion_edge (A3/SDK)
+    sl_89912_volume_edge (784)
+    SDK Request Hourly 89912 Chrome
+    SDK Request Hourly 89912 Edge
+    sl_89912_conversion_chrome (A3/SDK)
+    sl_89912_volume_chrome (784)
+    sl_89914_conversion_edge (A3/SDK)
+    sl_89914_volume_edge (784)
+    SDK Request Hourly 89914 Chrome
+    SDK Request Hourly 89914 Edge
+    sl_89914_conversion_chrome (A3/SDK)
+    sl_89914_volume_chrome (784)
+    sl_a3_av_by_hour
+    sl_a3_av_by_date
+    sl_current buckets
+    sl_landing_links
+    SDK Request Hourly (universal)
+    SDK Request Hourly (universal, subid)
+    sl_campaign_volume_(784)_universal
+    sl_campaign_volume_(784)_universal_subid
+    sl_campaign_conversion_ (A3/SDK)_universal
+    sl_campaign_conversion_(A3/SDK)_universal_subid
+    DownloadToAction SDK Conversion Specific Campaign DAILY (copy)
+    DownloadToAction SDK Conversion Specific Campaign HOURLY (copy)
+    sl_campaign_conversion_a3_to_a20_universal
+    sl_campaign_conversion_2940_to_a20_universal
+https://dash.ice.ocsops.com/dashboard/weatherzero-aging
+    WeatherZero Aging Model
+    WeatherZero Aging Model
+    WeatherZero Aging Model - ONLY GOOD USERS
+https://dash.ice.ocsops.com/dashboard/sso-investigations
+    SSO DAU Any Day Greater Than Date of Install
+https://dash.ice.ocsops.com/dashboard/sso-extensions
+    SSO Extension Unique IP per Domain
+    SSO Extension Unique IP per Day
+    SSO Extension Unique IP per Domain - Up to Current Hour Each Day
+    SSO Extension Unique IP per Day - Up to Current Hour Each Day
+https://dash.ice.ocsops.com/dashboard/specific-yurit-s-graphs
+    All pubs SCB A3 for specific AV By Hour
+https://dash.ice.ocsops.com/dashboard/idlebuddy
+    IdleBuddy Daily Active
+https://dash.ice.ocsops.com/dashboard/offer-funnel
+    Offer Comparison by Date Percentage
+    Offer Comparison by Date
+https://dash.ice.ocsops.com/dashboard/publisher-day-over-day-comparison
+    SCB Live Links
+    Chart2 A784 Hourly DOD Pub 89219 Wakenet
+    Chart2 Conversion SDK to A3 Hourly DOD Pub 89219 Wakenet
+    Chart2 Specific Bucket SDK to A3 Hourly DOD
+    Chart2 A784 Hourly DOD Pub 89774 Lauder
+    Chart2 Conversion SDK to A3 Hourly DOD Pub 89774 Lauder
+    Chart2 A784 Hourly DOD Pub 89237 Wmdinternet
+    Chart2 Conversion SDK to A3 Hourly DOD Pub 89237 Wmdinternet
+    Chart2 A784 Hourly DOD Pub 89786 ADFC
+    Chart2 Conversion SDK to A3 Hourly DOD Pub 89786 ADFC
+    Chart2 A784 Hourly DOD Pub 89784 DigitalDigest
+    Chart2 Conversion SDK to A3 Hourly DOD Pub 89784 DigitalDigest
+    Chart2 A784 Hourly DOD Pub 50600
+    Chart2 Conversion SDK to A3 Hourly DOD Pub 50600
+    Chart2 A784 Hourly DOD Pub 89794 PROPHOSTED
+    Chart2 Conversion SDK to A3 Hourly DOD Pub 89794 PROPHOSTED
+    Chart2 A784 Hourly DOD Pub 89778
+    Chart2 Conversion SDK to A3 Hourly DOD Pub 89778
+    Chart2 A784 Hourly DOD Pub 89798 ACSH_CPA
+    Chart2 Conversion SDK to A3 Hourly DOD Pub 89798 ACSH_CPA
+    Chart2 A784 Hourly DOD Pub 89914 JDOWNLOADER
+    Chart2 Conversion SDK to A3 Hourly DOD Pub 89914 JDOWNLOADER
+    Chart2 A784 Hourly DOD Pub 89780 ADMVN_HOSTED
+    Chart2 Conversion SDK to A3 Hourly DOD Pub 89780 ADMVN_HOSTED
+    Chart2 A784 Hourly DOD Pub 89822
+    Chart2 Conversion SDK to A3 Hourly DOD Pub 89822
+    SDK Conversion Specific Campaign
+    SDK Conversion Specific Campaign
+    SDK GOOD CALL RATIO SDK Conversion Specific Campaign
+    SDK Response Time Specific Campaign
+    DownloadToAction SDK Conversion Specific Campaign
+    Chart2 SDK Request Hourly DOD
+    50600 Campaign SDK Request by SITE
+https://dash.ice.ocsops.com/dashboard/fusion-data
+    Fusion Offers Shown by Date
+    Fusion KEY by Date / A3+A11
+    Fusion Offers Shown by Hour
+    Fusion IP Saw ANY Offer / A3+A11 by Hour
+https://dash.ice.ocsops.com/dashboard/segurazo-test-data
+    Description Name Detection
+    Sign Detection
+https://dash.ice.ocsops.com/dashboard/sep-12-ie-win-7
+    Win 7 - IE - 2940 to Download
+    Win 7 - IE - A3 to Download
+    Win 7 - IE - A1587 to Download
+https://dash.ice.ocsops.com/dashboard/user-av-loss-trend-investigations
+    Quick Query - Installer OS A3 AV By Date
+    Installer OS A3 AV By Date
+    Installer OS A3 AV By Hour
+    Investigation - OS Version A1584/DL
+    Investigation - OS Version A1584/DL IE EDGE
+    Investigation - OS Download Percentage
+    Investigation - OS Download Percentage Chrome
+    Investigation - OS Download Percentage IE EDGE
+    First Investigation Query
+https://dash.ice.ocsops.com/dashboard/a2940-to-download-reports
+    Chrome A2940 To Download
+    Edge A2940 To Download
+    IE A2940 To Download
+    Monthly Edge A2940 To Download
+    Monthly Chrome A2940 To Download
+    Monthly IE A2940 To Download
+    Monthly Chrome A1584 To Download
+    Monthly Edge A1584 To Download
+    Monthly IE A1584 To Download
+https://dash.ice.ocsops.com/dashboard/yuriy-test
+    IE/Edge A2940 DL
+https://dash.ice.ocsops.com/dashboard/yuriy-s-dashboard
+    2940+9902 to 2940 SCB Conversion Specific Campaign
+    2940 to SDK Complete SCB Conversion Specific Campaign
+    SDK GOOD CALL RATIO SCB Conversion Specific Campaign
+    2940+9902 to 2940 SCB Conversion all Campaign
+    2940 to SDK Complete SCB Conversion all Campaign
+    SDK GOOD CALL RATIO SCB Conversion all Campaign
+https://dash.ice.ocsops.com/dashboard/main-individual-queries
+    Chrome UALOGSNEWFORMAT - A1584
+    IE/Edge UALOGSNEWFORMAT - A1584
+    Chrome A3 DL
+    IE/Edge A3 DL
+    10 MIN Chrome UALOGSNEWFORMAT
+    Installer Chrome A3 AV By Hour
+    Installer IE/EDGE A3 AV By Hour
+    UAC Installer Chrome A11 AV By Hour
+    UAC Installer IE/EDGE A11 AV By Hour
+    SCB A3 AV By Hour
+    UAC SCB A3 AV By Hour
+    SCB A3 AV By Date
+https://dash.ice.ocsops.com/dashboard/segurazo-individual-queries
+    Defender Status DAU Specific Date of Install Seg
+    Install Version By Date IC
+    Install Version By Hour IC
+    DAU Any Day Greater Than Date of Install Seg W Version
+    Uninstall DAU Matches To Any Day Greater Than Date of Install Seg W Version
+https://dash.ice.ocsops.com/dashboard/segurazo
+    Hourly Ipixel Iron Install Count SEG
+    Ipixel Iron Install Count SEG
+    Takeover for Specific Date of Install UPDRESULTS Seg
+    Takeover UPDRESULTS Seg
+    DAU Specific Date of Install Seg
+    Hourly Takeover UPDRESULTS Seg
+    Hourly Filter Request versus ICSTATE Success TAKEOVER SEG
+    Not Takeover but UPDRESULTSTEMP request DAU Specific Date of Install Seg
+    Filter Request versus ICSTATE Success TAKEOVER SEG
+    EXCLUDE DATE DAU Specific Date of Install Seg
+    DAU Any Day Greater Than Date of Install Seg
+    Disappeared Users - Alive+Uninstall DAU Matches SEG
+    Uninstall DAU Matches To Any Day Greater Than Date of Install Seg
+    EXCLUDE TAKEOVER UID DATE DAU Specific Date of Install Seg
+    COHORT AV Specific Date of Install Seg
+    COHORT AV Specific Date of Install Seg
+    COHORT OS Specific Date of Install Seg
+    COHORT OS Specific Date of Install Seg
+    UPDRESULTSTEMP Any Day Greater Than Date of Install Seg
+    UPDRESULTS versus FEEDBACK Specific Date of Install Seg
+https://dash.ice.ocsops.com/dashboard/downloader-troubleshooting
+    A784 By Hour
+    A1581+1583 / A2940 GOOD USERS
+    CHROME A1581+1583 / A2940 GOOD USERS
+    IE EDGE A1581+1583 / A2940 GOOD USERS
+    CHROME A1747+1581+1583 / A2940 GOOD USERS (not IRN)
+    IE/Edge A1747+1581+1583 / A2940 GOOD USERS (not IRN)
+    CHROME A11 / A2941 GOOD USERS - ONLY A2941
+    IE/EDGE A11 / A2941 GOOD USERS - ONLY 2941
+    60 Days 2940 to 2941
+    Hourly A2940 / A2941
+    60 Days Users who send both (2940+2941) in same day to 2941
+    60 Days 2940 to Download
+    60 Days 2941 to Download
+    60 Days 1584 to Download
+    HOURLY AV Wrapper Survival of Downloader A1835/A2142
+    HOURLY AV Wrapper Survival of UAC Downloader A1839/A2141
+    HOURLY AV Wrapper Start of UAC (A11/2941)
+    HOURLY AV Wrapper Start of Reg (A1747+581+1583/2940)
+    AV Wrapper Survival of UAC Downloader A1839/A2141
+    AV Wrapper Survival of Downloader A1835/A2142
+    DAILY AV Wrapper Start of UAC (A11/2941)
+    DAILY AV Wrapper Start of Reg (A1747+581+1583/2940)
+    SCB HOURLY AV Wrapper Start of Reg (A1747+581+1583/2940)
+    SCB DAILY AV Wrapper Start of Reg (A1747+581+1583/2940)
+https://dash.ice.ocsops.com/dashboard/chrome-conversion
+    Conversion by Browser Version
+    Conversion by Page
+    Conversion by OS Version
+    Download by Page
+    Subids
+    ISP LP Impression
+    OS LP Impression
+    Browser OS LP Impression
+    City LP Impression
+    Day of Week LP Impression
+    Subid Performance
+    State LP Impression
+    Time Of Day LP Impression
+    Campaign Monthly IE A1584 To Download
+    Campaign Monthly Chrome A1584 To Download
+    Campaign Monthly Edge A1584 To Download
+https://dash.ice.ocsops.com/dashboard/test-1
+    Chart2 A784 Hourly
+    Chrome A3 DL
+    IE/Edge A3 DL
+    Hourly Ipixel Iron Install Count SEG
+    SEG IC AVPIXEL to Our Install Count
+    Chrome A2940 DL
+    IE/Edge A2940 DL
+    Chrome A11 DL
+    IE/EDGE A11 DL
+    A784 By Date
+    Daily Platform Installs
+    A1581+1583 / A2940 GOOD USERS
+    A784 By Hour
+    Subid A784 By Date
