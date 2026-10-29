@@ -76,7 +76,8 @@ def anonymize(source: Path, anon_dir: Path, json_path: Path) -> int:
                 anon_name = random_name() + extension
 
             os.link(file_path, anon_dir / anon_name)
-            mapping[anon_name] = relative
+            description = {'origin': relative, 'status': 'OK'}
+            mapping[anon_name] = description
     except Exception:
         # Roll back: remove everything created so far, keep no JSON.
         for anon_name in mapping:
@@ -114,7 +115,8 @@ def restore(anon_dir: Path, restored_dir: Path, json_path: Path) -> tuple:
     restored_count = 0
     missing = []
 
-    for anon_name, relative in mapping.items():
+    for anon_name, description in mapping.items():
+        relative = description['origin']
         source_file = anon_dir / anon_name
         if not source_file.is_file():
             missing.append(anon_name)
