@@ -30,12 +30,23 @@ import json
 import os
 import sys
 import uuid
+import hashlib
 from pathlib import Path
 
 ANON_SUFFIX = "_anonymized"
 RESTORED_SUFFIX = "_restored"
 JSON_SUFFIX = ".json"
 ANON_NAME_LENGTH = 8  # length of the random part of an anonymized name
+
+
+def calculate_md5(filename):
+    md5 = hashlib.md5()
+
+    with open(filename, "rb") as f:
+        for chunk in iter(lambda: f.read(8192), b""):
+            md5.update(chunk)
+
+    return md5.hexdigest()
 
 
 def random_name() -> str:
@@ -76,7 +87,8 @@ def anonymize(source: Path, anon_dir: Path, json_path: Path) -> int:
                 anon_name = random_name() + extension
 
             os.link(file_path, anon_dir / anon_name)
-            description = {'origin': relative, 'status': 'OK'}
+            file_hash = calculate_md5(file_path)
+            description = {'hash': file_hash, 'origin': relative, 'status': 'OK'}
             mapping[anon_name] = description
     except Exception:
         # Roll back: remove everything created so far, keep no JSON.
