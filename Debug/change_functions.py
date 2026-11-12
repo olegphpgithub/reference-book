@@ -110,6 +110,133 @@ class StartUpCheck(Editor):
         ])
 
 
+class EliminateCall(Editor):
+    # Functions whose calls get replaced with S_OK
+    TARGET_FUNCTIONS = (b'DwmGetWindowAttribute', b'DwmSetWindowAttribute')
+
+    # Classifier: the call is replaced only if its 2nd argument is in this list
+    TARGET_ATTRIBUTES = [
+        b'DWMWA_SYSTEMBACKDROP_TYPE',
+    ]
+
+    _CALL_RE = re.compile(
+        rb'(?<![\w:])(?:::\s*)?(?:' + b'|'.join(TARGET_FUNCTIONS) + rb')\s*\('
+    )
+    _ARG_NAME_RE = re.compile(rb'^[&*]?\s*([A-Za-z_]\w*)$')
+
+    @staticmethod
+    def _find_call_end(data, open_paren):
+        """Return the index right after the ')' matching data[open_paren] == '('."""
+        depth = 0
+        i = open_paren
+        n = len(data)
+        while i < n:
+            c = data[i:i + 1]
+            if c == b'(':
+                depth += 1
+            elif c == b')':
+                depth -= 1
+                if depth == 0:
+                    return i + 1
+            elif c in (b'"', b"'"):  # string / char literal
+                quote = c
+                i += 1
+                while i < n and data[i:i + 1] != quote:
+                    if data[i:i + 1] == b'\\':
+                        i += 1
+                    i += 1
+            elif data[i:i + 2] == b'//':  # line comment
+                nl = data.find(b'\n', i)
+                i = n if nl == -1 else nl
+                continue
+            elif data[i:i + 2] == b'/*':  # block comment
+                end = data.find(b'*/', i + 2)
+                i = n if end == -1 else end + 1
+            i += 1
+        raise ValueError('Unbalanced parentheses in function call')
+
+    @staticmethod
+    def _split_args(args_text):
+        """Split an argument list on top-level commas."""
+        args, depth, cur = [], 0, bytearray()
+        for b in args_text:
+            ch = bytes([b])
+            if ch in (b'(', b'[', b'{'):
+                depth += 1
+            elif ch in (b')', b']', b'}'):
+                depth -= 1
+            if ch == b',' and depth == 0:
+                args.append(bytes(cur))
+                cur = bytearray()
+            else:
+                cur += ch
+        if cur.strip():
+            args.append(bytes(cur))
+        return [a.strip() for a in args]
+
+    def organize(self, file_data):
+        newline = b'\r\n' if b'\r\n' in file_data else b'\n'
+        out = bytearray()
+        pos = 0
+
+        while True:
+            m = self._CALL_RE.search(file_data, pos)
+            if not m:
+                out += file_data[pos:]
+                break
+
+            call_start = m.start()
+            open_paren = m.end() - 1
+            call_end = self._find_call_end(file_data, open_paren)
+            args = self._split_args(file_data[open_paren + 1:call_end - 1])
+
+            # Classifier check: leave the call untouched unless
+            # the 2nd argument is one of the known attributes
+            if len(args) < 2 or args[1] not in self.TARGET_ATTRIBUTES:
+                out += file_data[pos:call_end]
+                pos = call_end
+                continue
+
+            # Everything before the call on the same line: indent + "return " / "hr = "
+            line_start = file_data.rfind(b'\n', 0, call_start) + 1
+            prefix = file_data[line_start:call_start]
+            indent = prefix[:len(prefix) - len(prefix.lstrip())]
+            statement_head = prefix[len(indent):]
+
+            # Collect parameters: plain identifiers (optionally with & or *),
+            # skipping constants (ALL_CAPS) and expressions like sizeof(...)
+            names = []
+            for arg in args:
+                am = self._ARG_NAME_RE.match(arg)
+                if am:
+                    name = am.group(1)
+                    if not name.isupper() and name not in names:
+                        names.append(name)
+
+            out += file_data[pos:line_start]
+            for name in names:
+                out += indent + b'UNREFERENCED_PARAMETER(' + name + b');' + newline
+
+            if statement_head.strip():
+                out += indent + statement_head + b'S_OK'
+                pos = call_end
+            else:
+                # The call was a standalone statement: drop it together with its ';'
+                tail = call_end
+                while file_data[tail:tail + 1] in (b' ', b'\t'):
+                    tail += 1
+                if file_data[tail:tail + 1] == b';':
+                    tail += 1
+                # Remove the trailing line break too, as the line is gone
+                if file_data[tail:tail + 2] == b'\r\n':
+                    tail += 2
+                elif file_data[tail:tail + 1] == b'\n':
+                    tail += 1
+                pos = tail
+
+        return bytes(out)
+
+
 class CreateProcess(Editor):
     def __init__(self):
         self.patterns_organize = dict([
@@ -256,6 +383,7 @@ action_dict.append(AddRemoveList())
 # action_dict.append(StartUpCheck())
 action_dict.append(Miscellaneous())
 # action_dict.append(CreateProcess())
+action_dict.append(EliminateCall())
 
 
 def substitute_file(file_name):
